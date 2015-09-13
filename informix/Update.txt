@@ -1,0 +1,109 @@
+-- Select * from ap_sale  where distributor_Id = '500505000' order  by ap_sale_id desc;
+/*
+execute procedure wsp_APSale_Update(201681, 'l_Carrier_Code', 10,1,0,0,0,12,12,5
+, 'OrderPerson'
+,'p_ship_to_line_1'
+,'p_ship_to_line_2'
+,'p_ship_to_line_3'
+,'p_ship_to_line_4'
+,'p_ship_to_line_5'
+,'p_ship_to_line_6'
+, 'p_phone_number char(20)'
+, 'p_FaxNumber char(20)'
+, 'p_MobilePhone varchar(20)'
+, 'p_EmailAddress varchar(60)'
+,'p_TaxCountry char(3)'
+	,'p_TaxState char(2)'
+	,'p_TaxOther char(50)'
+	,'p_TaxZip char(10)'
+
+	,'l_payment_type'
+	,'l_cc_number'
+	,'cc_exp_date'
+	,'cc_name'
+, '08/12/2011','10:30')
+*/
+--drop procedure wsp_APSale_Update
+
+CREATE PROCEDURE "informix".wsp_APSale_Update
+(
+	l_ap_SaleID LIKE ap_sale.ap_sale_id
+	,l_Carrier_Code LIKE ap_sale.carrier_code
+	,l_item_total LIKE ap_sale.item_total	
+	,l_freight like ap_sale.freight
+	,l_state_Tax like ap_sale.state_Tax
+	,l_other_Tax like ap_sale.other_Tax
+	,l_Total_Tax like ap_sale.Total_Tax
+	,l_order_total like ap_sale.order_total
+	,p_PVTotal decimal(8,2)
+	,p_TotalWeight decimal(7,3)
+	,l_order_Person like ap_sale.distributor_name
+	,p_ship_to_line_1 char(40)
+	,p_ship_to_line_2 char(40)
+	,p_ship_to_line_3 char(40)
+	,p_ship_to_line_4 char(40)
+	,p_ship_to_line_5 char(40)
+	,p_ship_to_line_6 char(40)
+	,p_phone_number char(20)
+	,p_FaxNumber char(20)
+	,p_MobilePhone varchar(20)
+	,p_EmailAddress varchar(60)
+	,p_TaxCountry char(3)
+	,p_TaxState char(2)
+	,p_TaxOther char(50)
+	,p_TaxZip char(10)
+
+	,l_payment_type like ap_sale.payment_type
+	,l_cc_number LIKE ap_sale.cc_number
+	,l_cc_exp_date LIKE ap_sale.cc_exp_date
+	,l_cc_name LIKE ap_sale.cc_name
+
+	,l_action_date LIKE ap_sale.action_date
+	,l_action_time LIKE ap_sale.action_time
+	
+)
+RETURNING
+	int as RowsAffected;
+
+	-- Update the sale
+	UPDATE ap_sale SET
+		Carrier_Code 	= l_Carrier_Code
+		,item_total 	= l_item_total
+		,freight	= l_freight
+		,other_Tax	= l_other_Tax
+		,state_Tax	= l_state_Tax
+		,Total_Tax	= l_Total_Tax
+		,adjustment 	= 0
+		,order_total 	= l_order_total
+		,PV_Total 	= p_PVTotal
+		,Total_Weight	= p_TotalWeight
+
+		,order_Person	= l_order_Person
+		,ship_to_line_1 = p_ship_to_line_1
+		,ship_to_line_2 = p_ship_to_line_2
+		,ship_to_line_3 = p_ship_to_line_3
+		,ship_to_line_4 = p_ship_to_line_4
+		,ship_to_line_5 = p_ship_to_line_5
+		,ship_to_line_6 = p_ship_to_line_6
+
+		,phone_number = p_phone_number
+		,fax_number = p_FaxNumber
+		,mobile_phone = p_MobilePhone
+		,email_address = p_EmailAddress
+		,tax_country = p_TaxCountry
+		,tax_state = p_TaxState
+		,tax_other = p_TaxOther
+		,tax_zip = p_TaxZip
+	
+		,payment_type = l_payment_type
+		,cc_number = l_cc_number
+		,cc_exp_date = l_cc_exp_date
+		,cc_name = l_cc_name
+
+		,action_date	= l_action_date --DATE(CURRENT),
+		,action_time 	= l_action_time --CAST(CURRENT HOUR TO MINUTE AS VARCHAR(5))
+
+	WHERE ap_sale_id = l_ap_SaleID;
+
+	RETURN dbinfo('sqlca.sqlerrd2');
+END PROCEDURE;

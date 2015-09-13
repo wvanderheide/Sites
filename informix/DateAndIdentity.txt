@@ -1,0 +1,17 @@
+CREATE PROCEDURE "informix".wsp_APSale_Update
+(
+	l_ap_SaleID LIKE ap_sale.ap_sale_id
+	
+)
+RETURNING
+	int as RowsAffected;
+
+	-- Update the sale
+	UPDATE ap_sale SET
+		action_date	= DATE(CURRENT),
+		,action_time 	= CAST(CURRENT HOUR TO MINUTE AS VARCHAR(5))
+
+	WHERE ap_sale_id = l_ap_SaleID;
+
+	RETURN dbinfo('sqlca.sqlerrd2');
+END PROCEDURE;

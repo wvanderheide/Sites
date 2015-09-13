@@ -1,0 +1,97 @@
+
+
+JSON (or JavaScript Object Notation) -- The Fat-Free Alternative to XML
+
+Its structure is recognized natively by Javascript, because it is Javascript. 
+Its formatting conventions are easily recognized by other C-like languages.
+
+JSON is built on two structures:
+ - A collection of name/value pairs. 
+ - An ordered list of values
+These are universal data structures. 
+Virtually all modern programming languages support them in one form or another. 
+It makes sense that a data format that is interchangable with programming languages also be based on these structures.
+
+
+JSON is simple, and more human readable,  and can represent the exact same data as XML does but with fewer characters. 
+How? Well, there are no tags. You give a member a name and then a value. 
+
+If we receive XML back as a direct result of an Ajax call, we have to send that data through an XML parser before we 
+can even begin to manipulate the data to be useful to JavaScript. If we receive the data in JSON we don’t have to 
+do anything but assign the results to a variable because JSON is already JavaScript.
+
+XML works nicely. JSON works just as nicely and faster. 
+
+While most browsers can construct, send, and parse XML, JavaScript Object Notation (or JSON) provides a standardized 
+data exchange format that is better-suited for Ajax-style web applications.
+
+You can set up an array in JavaScript in two ways: (from  http: //msdn.microsoft.com/en-us/library/bb299886.aspx)
+
+//Way 1: (traditional way)
+var continents = new Array();
+continents[0] = "Europe";
+continents[1] = "Asia";
+continents[2] = "Australia";
+continents[3] = "Antarctica";
+continents[4] = "North America";
+continents[5] = "South America";
+continents[6] = "Africa";
+
+
+//Way 2: (via literal notation)
+var continents2 = ["Europe", "Asia", "Australia", "Antarctica", "North
+ America", "South America", "Africa"];
+
+alert(continents[0] + " is one of the " + continents.length + "
+ continents.");
+
+//Defining an object in JavaScript Way 1:
+        var mailingAddress = {};
+        mailingAddress.Address = "123 Anywhere St.";
+        mailingAddress.City = "Springfield";
+        mailingAddress.PostalCode = "TOK OKO";
+        
+        //Way 2: (via object literal notation)
+        var mailingAddress2 = {
+            "Address": "123 Anywhere St.",
+            "City": "Springfield",
+            "PostalCode": "TOK OKO"
+        };
+
+//array elements and object member values can themselves, in turn, use object and array literals
+//Below we define the contact object with 3 properties [aka 3 object members] (name, PermissionToCall,PhoneNumbers).
+// PhoneNumbers in turn consists of an array of unnamed object that has two properties[aka 2 object members] (Location, Number)
+        var contact = {
+            "Name": "John Doe",
+            "PermissionToCall": true,
+            "PhoneNumbers": [
+           {
+               "Location": "Home",
+               "Number": "555-555-1234"
+           },
+           {
+               "Location": "Work",
+               "Number": "555-555-9999 Ext. 123"
+           }
+         ]
+            };
+            if (contact.PermissionToCall) {
+                alert("Call " + contact.Name + " at " + contact.PhoneNumbers[1].Number);
+            }
+
+JSON is a data exchange format that was created from a subset of the literal object notation in JavaScript. 
+
+The charm of JSON is in its simplicity. A message formatted according to the JSON standard 
+is composed of a single top-level object or array. The array elements and object values can be objects, arrays, strings, 
+numbers, Boolean values (true and false), or null, but note dates since JavaScript doesn't have a 
+date literal (It uses the date object instead). That, in a nutshell, is the JSON standard! It's really that simple. 
+See www.json.org or RFC 4627 for a more formal description of the standard.
+
+
+The RFC defines the official file extension for a JSON file as '.json', and the official mime type as
+'application/json';
+
+
+JSONLint - The JSON Validator/parser: http://jsonlint.com/ Read the FAQ on that page to learn more about using the tool.
+
+Some JSON returning webservices: http://www.geonames.org/export/JSON-webservices.html

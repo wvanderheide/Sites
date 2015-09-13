@@ -1,0 +1,83 @@
+
+/*
+execute procedure wsp_APSale_Insert
+(5, '500505000','l_distributor_name','ctype','usa','usd','0', 'USSTD','1',DATE(CURRENT),'WEB','11:03')
+*/
+
+--drop procedure wsp_APSale_Insert
+
+CREATE PROCEDURE "informix".wsp_APSale_Insert
+(
+	l_ap_group like ap_sale.ap_group
+	,l_distributor_id like ap_sale.distributor_id
+	,l_distributor_name like ap_sale.distributor_name
+	,l_customer_type like ap_sale.customer_type
+	,l_country like ap_sale.country
+	,l_currency like ap_sale.currency
+	,l_warehouse_number like ap_sale.warehouse_number
+	,l_order_type like ap_sale.order_type
+	,l_start_month like ap_sale.start_month
+	,l_ap_signup_date like ap_sale.ap_signup_date
+	,l_entry_op_id like ap_sale.entry_op_id
+	,l_entry_time LIKE ap_sale.entry_time
+)
+    RETURNING integer;
+
+    DEFINE l_new_ap_sale_id	INTEGER;
+
+	INSERT INTO ap_sale (
+		ap_status_id
+		,ap_type_id
+		,ap_group
+		,distributor_id
+		,distributor_name
+		,customer_type
+		,country
+		,currency
+		,warehouse_number
+		,order_type
+		,order_method
+		,start_month
+		,ap_signup_date
+		,entry_method
+		,entry_op_id
+		,entry_date
+		,entry_time
+		,last_action
+		,action_op_id
+		,pack_f
+	)
+	VALUES  (
+		1 --ap_status_id
+		,1 --ap_type_id
+		,l_ap_group
+		,l_distributor_id
+		,l_distributor_name
+		,l_customer_type
+		,l_country
+		,l_currency
+		,l_warehouse_number
+		,l_order_type
+		,'DS'
+		,l_start_month
+		,l_ap_signup_date
+		,l_entry_op_id -- entry_method
+		,l_entry_op_id
+		,l_ap_signup_date
+		,l_entry_time
+		,'ADD'
+		,l_entry_op_id
+		,'N'
+	);
+
+    LET l_new_ap_sale_id = dbinfo('sqlca.sqlerrd1');
+	
+   RETURN l_new_ap_sale_id;
+END PROCEDURE;
+
+--select * from sale where sale_id =  6012158
+-- Select * from ap_sale where distributor_id='500505000' order by ap_sale_id desc --201658
+-- Select * from ap_sale where ap_sale_id > 201652 order by ap_sale_id desc --201658
+-- Select * from ap_sale where ap_sale_id >= 201674 order by ap_sale_id desc --201658
+
+

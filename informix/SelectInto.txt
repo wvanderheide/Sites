@@ -1,0 +1,38 @@
+--execute procedure wsp_ap_Sale_Select(201690)
+--drop procedure wsp_ap_Sale_Select
+Create Procedure "informix".wsp_ap_Sale_Select
+(      
+	l_ap_SaleID LIKE ap_sale.ap_sale_id
+)
+RETURNING
+ 	decimal(8,2) as ItemTotal,
+       	decimal(12,2) as FreightTotal,
+       	decimal(8,2) as  TaxTotal,
+        decimal(12,2) as OrderTotal,
+        decimal(8,2) as  PVTotal,
+        int as Status,
+        int as ShipDay;
+
+DEFINE o_ItemTotal decimal(8,2);
+DEFINE o_FreightTotal decimal(12,2);
+Define o_TaxTotal decimal(8,2);
+Define o_OrderTotal decimal(12,2);
+Define o_PVTotal  decimal(8,2);
+Define o_Status int;
+Define o_ShipDay int;
+
+	FOREACH
+		SELECT    
+			item_total, Freight, total_tax, order_total , pv_total , ap_status_id, ap_group
+		INTO
+			o_ItemTotal,o_FreightTotal,o_TaxTotal,o_OrderTotal,o_PVTotal,o_Status,o_ShipDay
+		from ap_sale
+		where  ap_sale_id = l_ap_SaleID
+
+		RETURN
+                	o_ItemTotal,o_FreightTotal,o_TaxTotal,o_OrderTotal,o_PVTotal,o_Status,o_ShipDay
+		WITH RESUME;
+        END FOREACH;
+
+END PROCEDURE;
+
