@@ -48,7 +48,7 @@
                         | <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
                     <li>QA:&nbsp;&nbsp; <a href="http://qa-toolbox/">Browse</a> | <a href="#"
                         target="_blank">Explore</a></li>
-                    <li>Stage:&nbsp;&nbsp; <a href="http://stage-toolbox/">Browse</a> | <a href="#"
+                    <li>Stage:&nbsp;&nbsp; <a href="http://staging-toolbox/">Browse</a> | <a href="#"
                         target="_blank">Explore</a></li>
                     <li>Live:&nbsp;&nbsp; <a href="http://toolbox.klasresearch.com">http://toolbox.klasresearch.com</a></li>
                 </ul>
@@ -80,7 +80,8 @@
                         | <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
                     <li>QA:&nbsp;&nbsp; <a href="http://qa-research/">Browse</a> | <a href="#"
                         target="_blank">Explore</a></li>
-                    <li>Stage:&nbsp;&nbsp; <a href="http://stage-research/">Browse</a> | <a href="#"
+                    <li>Stage:&nbsp;&nbsp; <a href="http://staging
+                        -research/">Browse</a> | <a href="#"
                         target="_blank">Explore</a></li>
                     <li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">?http://data.klasresearch.com/??</a></li>                    
                     <li>Live:&nbsp;&nbsp; <a href="http://www.klasresearch.com/">?http://www.klasresearch.com/??</a></li>
