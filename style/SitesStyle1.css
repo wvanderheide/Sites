@@ -1,230 +1,220 @@
 
-/** selectors **/  
-.NotShown
-{
-	display:none;
-}
-.Shown
-{
-	display:block;
+/** selectors **/
+.NotShown {
+    display: none;
 }
 
-.red 
-{
-	background-color:Red;
+.Shown {
+    display: block;
 }
 
-.blue
-{
-	background-color:Blue;
-	color:Lime;
+.red {
+    background-color: Red;
+}
+
+.blue {
+    background-color: Blue;
+    color: Lime;
 }
 
 /** tags **/
-ul  
-{
-    margin-top: 1px; 
+ul {
+    margin-top: 1px;
     margin-bottom: 1px;
 }
 
-fieldset.AutoHeight
-{
-   height:auto;
-} 
-
-fieldset.AutoWidth
-{
-    width: auto;    
+fieldset.AutoHeight {
+    height: auto;
 }
 
-fieldset
-{
+fieldset.AutoWidth {
+    width: auto;
+}
+
+fieldset {
     width: 300px;
-    height:300px;  
-    margin:0px 3px 0px 0px;
-    border-color:navy;
-    padding:0px 2px 5px 0px;
+    height: 300px;
+    margin: 0px 3px 0px 0px;
+    border-color: navy;
+    padding: 0px 2px 5px 0px;
 }
 
-legend
-{
-    color:#3399FF;
-    font-family : Verdana;
-    font-size : 14px;   
-    font-weight: bold; 
+p {
+    padding: 10px;
 }
-li
-{
+
+legend {
+    color: #3399FF;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+li {
     line-height: 14px;
 }
 
-a, #more
-{
-	color:#1376B4;
-	cursor:pointer;
-}
-a:hover, #more:hover
-{
-	color:#812020;
-	cursor:pointer;
-}
-a:visited
-{
-	/*color:#812020;*/
+a, #more {
+    color: #1376B4;
+    cursor: pointer;
 }
 
-body
-{
-	background-color:white;
-	padding-top: 0px;
-	margin-top: 0px;
-	margin-left: 25px;
+    a:hover, #more:hover {
+        color: #812020;
+        cursor: pointer;
+    }
+
+    a:visited {
+        /*color:#812020;*/
+    }
+
+body {
+    background-color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 25px;
 }
 
-i
-{
-	padding-left: 9px;
+i {
+    padding-left: 9px;
 }
 
-div.SpacerBetweenFieldSets 
-{
-	clear: both; 
-	margin-bottom: 15px;
+div.SpacerBetweenFieldSets {
+    clear: both;
+    margin-bottom: 15px;
 }
 
-/** ids **/ 
-#MainBody
-{
-	width:940px;
-    font-family:Verdana; 
-    font-size:12px;
+/** ids **/
+#MainBody {
+    width: 940px;
+    font-family: Verdana;
+    font-size: 12px;
     color: black;
 }
 
-#Nav
-{
-	text-align:right;	
+#Nav {
+    text-align: right;
 }
 
-#NavSpacer
-{
-	display:none;
+#NavSpacer {
+    display: none;
 }
 
-#HeaderLogo
-{
+#HeaderLogo {
     background-image: url('http://localhost/Sites/img/SitesLogo1.jpg');
-    background-repeat:no-repeat; 
-    background-color:transparent;
+    background-repeat: no-repeat;
+    background-color: transparent;
     height: 100px;
     width: 100px;
-    float:left;
+    float: left;
 }
-#HeaderText
-{
-    background-color:transparent;
+
+#HeaderText {
+    background-color: transparent;
     padding: 40px 0 0 0;
     height: 60px;
     width: 300px;
-    float:left;
-    color:#666;
-    font-family : Verdana;
-    font-size : 18px;   
-    font-weight: 900;  
+    float: left;
+    color: #666;
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: 900;
 }
 
-#HeaderSpacer
-{
-	clear:both;
+#HeaderSpacer {
+    clear: both;
 }
-#col1
-{
-    background-color:transparent;
-    float:left;
-    text-align:left;
-    clear:both; 
-}	 
-#col1Spacer
-{
-	display:none;
+
+#col1 {
+    background-color: transparent;
+    float: left;
+    text-align: left;
+    clear: both;
 }
-   
-#col2
-{
-    background-color:transparent;
-    float:left;
-    text-align:left;
-   /* background-image: url('http://localhost/Sites/img/SitesBackGround1.jpg); 
+
+#col1Spacer {
+    display: none;
+}
+
+#col2 {
+    background-color: transparent;
+    float: left;
+    text-align: left;
+    /* background-image: url('http://localhost/Sites/img/SitesBackGround1.jpg); 
 	background-position:center;
     background-repeat: no-repeat; */
-} 
-#col2Spacer
-{
-	display:none;
-}
-	    
-#col3
-{
-    background-color:transparent;
-    float:left;
-    text-align:left;
-}	
- 
-#col3Spacer
-{	
-	clear:both; 
 }
 
-#Footer
-{
-	font-style:normal;
-	text-align: center;
-    background-color:transparent;
+#col2Spacer {
+    display: none;
+}
+
+#col3 {
+    background-color: transparent;
+    float: left;
+    text-align: left;
+}
+
+#col3Spacer {
+    clear: both;
+}
+
+#Footer {
+    font-style: normal;
+    text-align: center;
+    background-color: transparent;
     padding: 15px 0px 1px 0px;
     height: 20px;
     width: 940px;
-    color:#666;
-    font-family : Verdana;
-    font-size : 10px;   
-    font-weight: 900; 
+    color: #666;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: 900;
 }
 
 /* tables */
 table.tablesorter {
-	font-family:arial;
-	background-color: #CDCDCD;
-	margin:10px 0pt 15px;
-	font-size: 8pt;
-	width: 100%;
-	text-align: left;
+    font-family: arial;
+    background-color: #CDCDCD;
+    margin: 10px 0pt 15px;
+    font-size: 8pt;
+    width: 100%;
+    text-align: left;
 }
-table.tablesorter thead tr th, table.tablesorter tfoot tr th {
-	background-color: #3399FF;
-	border: 1px solid #FFF;
-	font-size: 8pt;
-	padding: 4px;
-}
-table.tablesorter thead tr .header {
-	background-image: url(bg.gif);
-	background-repeat: no-repeat;
-	background-position: center right;
-	cursor: pointer;
-}
-table.tablesorter tbody td {
-	color: #3D3D3D;
-	padding: 4px;
-	background-color: #FFF;
-	vertical-align: top;
-}
-table.tablesorter tbody tr.odd td {
-	background-color:#F0F0F6;
-}
-table.tablesorter thead tr .headerSortUp {
-	background-image: url(asc.gif);
-}
-table.tablesorter thead tr .headerSortDown {
-	background-image: url(desc.gif);
-}
-table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
-background-color: White;
-}
+
+    table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+        background-color: #3399FF;
+        border: 1px solid #FFF;
+        font-size: 8pt;
+        padding: 4px;
+    }
+
+    table.tablesorter thead tr .header {
+        background-image: url(bg.gif);
+        background-repeat: no-repeat;
+        background-position: center right;
+        cursor: pointer;
+    }
+
+    table.tablesorter tbody td {
+        color: #3D3D3D;
+        padding: 4px;
+        background-color: #FFF;
+        vertical-align: top;
+    }
+
+    table.tablesorter tbody tr.odd td {
+        background-color: #F0F0F6;
+    }
+
+    table.tablesorter thead tr .headerSortUp {
+        background-image: url(asc.gif);
+    }
+
+    table.tablesorter thead tr .headerSortDown {
+        background-image: url(desc.gif);
+    }
+
+    table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+        background-color: White;
+    }
