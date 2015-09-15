@@ -194,10 +194,10 @@
 
 
             $("#buttonPPT").click(function() {
-                $(".NotShown:first").removeClass("NotShown").addClass("Shown")
+                $(".NotShown:first").removeClass("NotShown").addClass("Shown");
             });
 
-            // $("div small").ajaxSend(function(e, xhr, opt) { Count_ajaxSend++; alert("Requesting " + opt.url + ".\n\nCount_ajaxSend = " + Count_ajaxSend); });
+           // $("div small").ajaxSend(function(e, xhr, opt) { Count_ajaxSend++; alert("Requesting " + opt.url + ".\n\nCount_ajaxSend = " + Count_ajaxSend); });
             // $("div small").ajaxComplete(function() { Count_ajaxComplete++; alert("ajax Complete x = " + Count_ajaxComplete); });
             // $("div small").ajaxSuccess(function() { Count_ajaxSuccess++; alert("ajax Success x = " + Count_ajaxSuccess); });
 

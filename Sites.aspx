@@ -52,7 +52,8 @@
                         target="_blank">Explore</a></li>
                     <li>Live:&nbsp;&nbsp; <a href="http://toolbox.klasresearch.com">http://toolbox.klasresearch.com</a></li>
                 </ul>
-                <p>If asked "who is your hero?"<br />Answer: Super Dave</p>
+                <p>If asked "who is your hero?"<br />
+                    Answer: Super Dave</p>
             </fieldset>
             <div class="SpacerBetweenFieldSets">
             </div>
@@ -66,14 +67,14 @@
                 </ul>
             </fieldset>
         </div>
-        
+
         <div id="col1Spacer">
         </div>
 
         <div id="col2">
             <fieldset>
-                <legend>Klas Research</legend><i>ASP.NET 3.5?</i>
-                 <ul>
+                <legend>Klas Research (Data)</legend><i>ASP.NET 3.5?</i>
+                <ul>
                     <li>Localhost:&nbsp;&nbsp; <a href="http://wvander-research/">Browse</a>
                         | <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
                     <li>dev:&nbsp;&nbsp; <a href="http://dev-research/">Browse</a>
@@ -82,9 +83,8 @@
                         target="_blank">Explore</a></li>
                     <li>Stage:&nbsp;&nbsp; <a href="http://staging
                         -research/">Browse</a> | <a href="#"
-                        target="_blank">Explore</a></li>
-                    <li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">?http://data.klasresearch.com/??</a></li>                    
-                    <li>Live:&nbsp;&nbsp; <a href="http://www.klasresearch.com/">?http://www.klasresearch.com/??</a></li>
+                            target="_blank">Explore</a></li>
+                    <li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
                 </ul>
                 <p></p>
             </fieldset>
@@ -97,7 +97,11 @@
 
         <div id="col3">
             <fieldset>
-                <legend>???</legend><%--<i>ASP.NET 3.5</i>--%>
+                <legend>klasresearch.com</legend>
+                <ul>
+                    <li>Live:&nbsp;&nbsp; <a href="http://www.klasresearch.com/">http://www.klasresearch.com</a></li>
+                </ul>
+                <p>klasresearch.com is a sitefinity site</p>
             </fieldset>
             <div class="SpacerBetweenFieldSets">
             </div>
