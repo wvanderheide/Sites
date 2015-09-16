@@ -1,0 +1,3 @@
+git status
+
+To revert uncommitted changes issue this two commands (The first one will revert existing files modified since last commit, and the second one will remove all files added since last commit.):  git reset --hard and git clean -fd
