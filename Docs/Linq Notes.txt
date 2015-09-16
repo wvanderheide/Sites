@@ -1,0 +1,48 @@
+LINQ to Objects (or to Entities) 
+as opposed to Linq to xml or sql or dataset.
+
+Linq is the Microsoft's first attempt to integrate queries into language.
+
+Queries typically return a single object, a subset of fields from an object or set of objects
+or a set of matching objects.  What result (returned items) from the query in LINQ is called a sequence
+which are of type IEnumerable<T>.
+
+
+
+Lambda. In lambda calculus, a function becomes a variable.
+ Behavior is now just another unit of data. 
+In programs we apply the => operator to indicate a lambda.
+
+
+Lambda expressions: (input parameter(s)) "goes to" expression or statement block
+For example:  (x) => x % 2 != 0  
+
+The => operator can be read as "goes to." 
+It is always used when declaring a lambda expression.
+
+To the left of the "goes to"  we have arguments (parameters). 
+The result expression is on the right.
+
+The left value (x) indicates the arguments that we pass to a function and 
+the part after "goes to (=>) operator is the body of the function. 
+And we can feed (have) as many arguments as we need as in (x,y) => y+x > 10
+Likewise we can have multiple lines of code on the right side as in:
+
+(value1,value2) => {
+           value1 = value1 + 2;
+           value2 = value2 + 2;
+           return value1 + value2;
+};
+
+Also you might want to have no parameters as in (in which case you specify zero input parameters with empty parentheses):
+
+() => SomeMethod()
+
+
+When writing lambdas, you often do not have to specify a type for the input parameters because the compiler can infer the type based on the lambda body.
+
+But sometimes it is difficult or impossible for the compiler to infer the input types. When this occurs, you can specify the types explicitly as shown in the following example:
+as in: (int x, string s) => s.Length > x
+
+
+
