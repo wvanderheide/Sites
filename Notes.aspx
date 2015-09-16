@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<%@ page language="c#" %>
+<%@ Page Language="c#" %>
 
 <head>
     <% 
@@ -117,7 +117,7 @@
                "Location": "Work",
                "Number": "555-555-9999 Ext. 123" //comment
            }
-         ]
+            ]
         };
         if (contact.PermissionToCall) {
             alert("Call " + contact.Name + " at " + contact.PhoneNumbers[1].Number);
@@ -131,7 +131,7 @@
 
 
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             /*
             $("ul >li:first").next().hover(function() { $(this).addClass("blue") }, function() { $(this).removeClass("blue") }); //Child Selector (“parent > child”)
             $("ul:first li").each(function(i) { $(this).append(" Bam! " + i) }); 
@@ -160,8 +160,8 @@
             //################################################################################################
             //#   Use jQuery to make all offsite links open in a new window
             //################################################################################################
-            $(document).ready(function() {
-                $("a").filter(function() {
+            $(document).ready(function () {
+                $("a").filter(function () {
                     return this.hostname && this.hostname !== location.hostname;
                 }).attr('target', '_blank');
             });
@@ -170,10 +170,10 @@
             //################################################################################################
             //#   Add a new method called check to the jQuery Library
             //################################################################################################
-            jQuery.fn.check = function(mode) {
+            jQuery.fn.check = function (mode) {
                 // if mode is undefined, use 'on' as default
 
-                return this.each(function() {
+                return this.each(function () {
                     switch (mode) {
                         case 'uncheck':
                             this.checked = false;
@@ -193,55 +193,56 @@
 
 
 
-            $("#buttonPPT").click(function() {
+            $("#buttonPPT").click(function () {
                 $(".NotShown:first").removeClass("NotShown").addClass("Shown");
             });
 
-           // $("div small").ajaxSend(function(e, xhr, opt) { Count_ajaxSend++; alert("Requesting " + opt.url + ".\n\nCount_ajaxSend = " + Count_ajaxSend); });
+            // $("div small").ajaxSend(function(e, xhr, opt) { Count_ajaxSend++; alert("Requesting " + opt.url + ".\n\nCount_ajaxSend = " + Count_ajaxSend); });
             // $("div small").ajaxComplete(function() { Count_ajaxComplete++; alert("ajax Complete x = " + Count_ajaxComplete); });
             // $("div small").ajaxSuccess(function() { Count_ajaxSuccess++; alert("ajax Success x = " + Count_ajaxSuccess); });
 
             //############################################
             //jQuery for $.ajax()
             //############################################
-            $("#button1").click(function() {
+            $("#button1").click(function () {
                 $("#button1").hide();
-                $.ajax({ url: "docs/Text.txt", success: function(urlContent) {
-                    var x = "<hr />";
-                    $("div small").text(x + urlContent);
-                    $("#button1").slideDown('slow');
-                }
+                $.ajax({
+                    url: "docs/Text.txt", success: function (urlContent) {
+                        var x = "<hr />";
+                        $("div small").text(x + urlContent);
+                        $("#button1").slideDown('slow');
+                    }
                 });
             });
 
             //############################################
             //jQuery for $.getScript()
             //############################################
-            $("#button2").click(function() { $.getScript("js/alert.txt"); });
+            $("#button2").click(function () { $.getScript("js/alert.txt"); });
 
             //############################################
             //jQuery for $.load()
             //############################################
-            $("#button3").click(function() { $("#divBtn3").load("js/alert.txt"); });
-            $("#ViewJQuery").click(function() { $("#ViewJQuery").load("http://code.jquery.com/jquery-1.6.2.js"); });
+            $("#button3").click(function () { $("#divBtn3").load("js/alert.txt"); });
+            $("#ViewJQuery").click(function () { $("#ViewJQuery").load("http://code.jquery.com/jquery-1.6.2.js"); });
 
             //############################################
             //jQuery for $.get() Example
             //############################################
-            $("#divGet").click(function() {
+            $("#divGet").click(function () {
                 //http://localhost/WebService1/Service1.asmx/Squared?x=3
-                $.get("http://jquery.bassistance.de/starterkit/rate.php?rating=2", function(data) {
+                $.get("http://jquery.bassistance.de/starterkit/rate.php?rating=2", function (data) {
 
                     //$("#divGet").html($("count", data).text()); //-- shorthand
-                    $(data).find('ratings').each(function() {
+                    $(data).find('ratings').each(function () {
                         $("#divGet").html($(this).find("count").text() + "<br />");
                     });
                 });
             }); //end of click
 
-            $("#divGet2").click(function() {
+            $("#divGet2").click(function () {
                 alert("Note this is slow - 5 sec delay");
-                $.get("http://localhost/WebService1/Service1.asmx/Squared?x=3", function(xml, s) { $("#divGet2").html('3*3 = ' + $("int", xml).text()); alert("status = " + s); }, "xml"); //end get
+                $.get("http://localhost/WebService1/Service1.asmx/Squared?x=3", function (xml, s) { $("#divGet2").html('3*3 = ' + $("int", xml).text()); alert("status = " + s); }, "xml"); //end get
             }); //end of click
 
             //############################################
@@ -249,8 +250,8 @@
             //############################################
             $("#placeHolder1").append("<span>Click</span> this to see a message: ");
             $("#placeHolder1 span").css("cursor", "pointer").css("text-decoration", "underline");
-            $("#placeHolder1 span").click(function() {
-                $.post("/WebService1/Service1.asmx/HelloWorld", function(data) { $("#placeHolder1").text($("string", data).text()); });
+            $("#placeHolder1 span").click(function () {
+                $.post("/WebService1/Service1.asmx/HelloWorld", function (data) { $("#placeHolder1").text($("string", data).text()); });
             });   //end click function
 
             //Add jQuery UI
@@ -266,10 +267,10 @@
                 $("#placeHolder2").append("<a href='#'>" + i + "</a> ");
             }
 
-            $("#placeHolder2 a").click(function(e) {
+            $("#placeHolder2 a").click(function (e) {
                 e.preventDefault();
 
-                $.post("/WebService1/Service1.asmx/Average", { x: $(this).html() }, function(data) { Process(data) });
+                $.post("/WebService1/Service1.asmx/Average", { x: $(this).html() }, function (data) { Process(data) });
             });    //end click function
 
             //Add jQuery UI    
@@ -303,7 +304,8 @@
         <div id="HeaderLogo">
         </div>
         <div id="HeaderText">
-            Notes</div>
+            Notes
+        </div>
         <div id="HeaderSpacer">
         </div>
         <div id="col2">
@@ -311,27 +313,27 @@
                 <legend>Browser Info</legend>
                 <div style="padding: 5px">
                     <details>
-                    Web browsers consist of a user interface (the Chrome), and a layout engine (i.e
+                        Web browsers consist of a user interface (the Chrome), and a layout engine (i.e
                     Trident, Gecko, WebKit, Presto). The layout engine does most of the work. It essentially
                     takes a URL and a screen rectangle as arguments. It then retrieves the document
                     corresponding to the URL and paints a graphical representation of it on the given
                     rectangle. It handles links, cookies, scripting, plug-in loading, and other matters.
                     The different layout engines implement the DOM standards to varying degrees of compliance.
                     <br />
-                    <br />
-                    The user interface provides the menu bar, address bar, status bar, bookmark manager,
+                        <br />
+                        The user interface provides the menu bar, address bar, status bar, bookmark manager,
                     history and preferences window among other things. It embeds the layout engine and
                     serves as an interface between the user and the engine. Since it provides the graphical
                     elements surrounding the area in which the engine paints documents, the term chrome
                     is sometimes used to refer to it.
                     <br />
-                    <br />
-                    Web browsers rely on layout engines to parse HTML into a DOM. Learn about the history
+                        <br />
+                        Web browsers rely on layout engines to parse HTML into a DOM. Learn about the history
                     of DOM <a href="http://en.wikipedia.org/wiki/Document_Object_Model">here</a>. DOM
                     Level 2 was published in late 2000. It introduced the "getElementById".
                     <br />
-                    <br />
-                    A web browser is not obliged to use DOM in order to render an HTML document. However,
+                        <br />
+                        A web browser is not obliged to use DOM in order to render an HTML document. However,
                     the DOM is required by JavaScript scripts that wish to inspect or modify a web page
                     dynamically. In other words, the Document Object Model is the way JavaScript sees
                     its containing HTML page and browser state. Web browsers rely on layout engines
@@ -340,39 +342,38 @@
                     Explorer and Opera respectively. Others, such as WebKit and Gecko, are shared by
                     a number of browsers, such as Safari, Google Chrome, RockMelt, Firefox or Flock.
                     <br />
-                    <ul>
-                        <li>IE 9 User_agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; <b>Trident/5.0</b>)
-                        </li>
-                        <li>FireFox 5.0 User_agent: Mozilla/5.0 (Windows NT 6.1; rv:5.0) <b>Gecko/20100101</b>
-                            Firefox/5.0 </li>
-                        <li>Google Chrome (12.0.742.112) User_agent: Mozilla/5.0 (Windows NT 6.1) <b>AppleWebKit/534.30</b>
-                            (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30</li>
-                        <li>Opera 11.5 User_agent: Opera/9.80 (Windows NT 6.1; U; Edition United States Local;
+                        <ul>
+                            <li>IE 9 User_agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; <b>Trident/5.0</b>)
+                            </li>
+                            <li>FireFox 5.0 User_agent: Mozilla/5.0 (Windows NT 6.1; rv:5.0) <b>Gecko/20100101</b>
+                                Firefox/5.0 </li>
+                            <li>Google Chrome (12.0.742.112) User_agent: Mozilla/5.0 (Windows NT 6.1) <b>AppleWebKit/534.30</b>
+                                (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30</li>
+                            <li>Opera 11.5 User_agent: Opera/9.80 (Windows NT 6.1; U; Edition United States Local;
                             en) <b>Presto/2.9.168</b> Version/11.50</li>
-                        <li><b>Current User Agent:</b>
-                            <%= Request.ServerVariables["Http_User_Agent"].ToString() %></li>
-                    </ul>
-                    <br />
-                    The format of a user agent is only required to be a string made up of the product
+                            <li><b>Current User Agent:</b>
+                                <%= Request.ServerVariables["Http_User_Agent"].ToString() %></li>
+                        </ul>
+                        <br />
+                        The format of a user agent is only required to be a string made up of the product
                     and optional comments. An unofficial format used by Web browsers is as above, and
                     roughly consists of Mozilla/[version](Operating System) [layout engine]/[layout
                     engine details]) [extensions].
                     <br />
-                    <b>Mozilla/5.0</b> is used to indicate compatibility with the Mozilla rendering
+                        <b>Mozilla/5.0</b> is used to indicate compatibility with the Mozilla rendering
                     engine. Mozilla/Netscape released the first full-featured Web browser (based on
                     the earlier NCSA MOSAIC project), and as first to the goal, they got to define some
                     of the rules. As such, to this day, Microsoft has to put "Mozilla compatible" in
                     IE's user-agent string.
                     <br />
-                    <br />
-                    <a href="http://www.blooberry.com/indexdot/history/browsers3.htm">Browser TimeLine</a>
-                    | <a href="http://en.wikipedia.org/wiki/Internet_Explorer#History">IE History</a>
-                    | <a href="http://en.wikipedia.org/wiki/History_of_Firefox">Firefox</a>
+                        <br />
+                        <a href="http://www.blooberry.com/indexdot/history/browsers3.htm">Browser TimeLine</a>
+                        | <a href="http://en.wikipedia.org/wiki/Internet_Explorer#History">IE History</a>
+                        | <a href="http://en.wikipedia.org/wiki/History_of_Firefox">Firefox</a>
                     </details>
                 </div>
             </fieldset>
-            <fieldset class="AutoHeight" style="float: left; <% if(ID=="99"){Response.Write(@"display:none;");
-                } %>">
+            <fieldset class="AutoHeight" style="float: left; <% if(ID=="99"){Response.Write(@"display:none;"); } %>">
                 <legend>ASP/ASP.NET Time Line</legend>
                 <ul>
                     <li>ASP 1.0, December 1996 </li>
@@ -386,8 +387,7 @@
                     <li>ASP.NET 4.0, April 2010</li>
                 </ul>
             </fieldset>
-            <fieldset class="AutoHeight" style="float: left; <% if(ID=="99"){Response.Write(@"display:none;");
-                } %>">
+            <fieldset class="AutoHeight" style="float: left; <% if(ID=="99"){Response.Write(@"display:none;"); } %>">
                 <legend>Visual Studio</legend>
                 <ul>
                     <li>Visual Studio .NET (2002), February 2002</li>
@@ -416,6 +416,33 @@
             </fieldset>
             <div style="clear: both">
             </div>
+
+            <fieldset class="AutoHeight AutoWidth">
+                <legend>Git Commands</legend>
+                <details>
+                    Local repo consists of: Working dir  --> Index (staging area)  --> Head (last commit)
+                    <ul>
+                        <li>git status</li>
+                        <li>git checkout -- "<"filename">"<br /><i>this replaces the changes in your working tree with the last content in HEAD</i></li>
+                        <li>git reset --hard and git clean -fd<br />
+                            <i>To revert uncommitted changes issue this two commands (The first one will revert existing files modified since last commit, and the second one will remove all files added since last commit.)</i></li>
+                    </ul>
+                </details>
+            </fieldset>
+            <div style="clear: both">
+            </div>
+
+            <fieldset class="AutoHeight AutoWidth">
+                <legend>LINQ</legend>
+                <details>
+                    <ul>
+                        <li><a href="docs/Linq Notes.txt" target="_blank">LINQ Notes</a></li>
+                    </ul>
+                </details>
+            </fieldset>
+            <div style="clear: both">
+            </div>
+
             <!--
             #################################################################################################################
             #################################################################################################################
@@ -428,44 +455,43 @@
                 <input id="Checkbox5" type="checkbox" onclick="ToggleNotShown()" />
                 Show All
                 <details>
-                <ul>
-                    <li>jQuery is a library that makes it quicker and easier to build feature-rich JavaScript
+                    <ul>
+                        <li>jQuery is a library that makes it quicker and easier to build feature-rich JavaScript
                         webpages and web apps. Often with jQuery you can write a single line of code to
                         achieve what would have taken 10+ lines of regular JavaScript code.</li>
-                    <li><span class="NotShown">jQuery is itself written in JavaScript.</span></li>
-                    <li><span class="NotShown">August 26th, 2006 First stable version of jQuery: jQuery
+                        <li><span class="NotShown">jQuery is itself written in JavaScript.</span></li>
+                        <li><span class="NotShown">August 26th, 2006 First stable version of jQuery: jQuery
                         1.0</span></li>
-                    <li><span class="NotShown">Current Release as of July 11, 2011 is v1.6.2</span></li>
-                    <li><span class="NotShown">If you don't want to store the jQuery library on your own
+                        <li><span class="NotShown">Current Release as of July 11, 2011 is v1.6.2</span></li>
+                        <li><span class="NotShown">If you don't want to store the jQuery library on your own
                         computer, you can use the hosted jQuery library from Google, Microsoft, or jQuery
                         CDN (content delivery network)<br />
-                        Google:<input type="text" id="scriptsrc" style="width: 700px;" value="<script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js&quot; type=&quot;text/javascript&quot;></script>" />
-                        <br />
-                        Microsoft:<input type="text" id="Text1" style="width: 700px;" value="<script src=&quot;http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.6.2.min.js&quot; type=&quot;text/javascript&quot;></script>" />
-                        <br />
-                        jQuery:<input type="text" id="Text2" style="width: 700px;" value="<script src=&quot;http://code.jquery.com/jquery-1.6.2.min.js&quot; type=&quot;text/javascript&quot;></script>" />
-                        <br />
-                        <br />
-                        <div id="ViewJQuery" style="cursor: pointer; background-color: #eeeeee; border: dotted 1px black;
-                            width: 200px">
-                            View jQuery Library</div>
-                    </span></li>
-                    <li><span class="NotShown">The jQuery() function. <i>The key to it all!</i> This function
+                            Google:<input type="text" id="scriptsrc" style="width: 700px;" value="<script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js&quot; type=&quot;text/javascript&quot;></script>" />
+                            <br />
+                            Microsoft:<input type="text" id="Text1" style="width: 700px;" value="<script src=&quot;http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.6.2.min.js&quot; type=&quot;text/javascript&quot;></script>" />
+                            <br />
+                            jQuery:<input type="text" id="Text2" style="width: 700px;" value="<script src=&quot;http://code.jquery.com/jquery-1.6.2.min.js&quot; type=&quot;text/javascript&quot;></script>" />
+                            <br />
+                            <br />
+                            <div id="ViewJQuery" style="cursor: pointer; background-color: #eeeeee; border: dotted 1px black; width: 200px">
+                                View jQuery Library
+                            </div>
+                        </span></li>
+                        <li><span class="NotShown">The jQuery() function. <i>The key to it all!</i> This function
                         has many uses, including selecting elements, creating elements, and running other
                         functions.</span></li>
-                    <li><span class="NotShown">"$()" is short-hand for the jQuery() function</span></li>
-                    <li><span class="NotShown">The jQuery() function is most commonly called by passing
+                        <li><span class="NotShown">"$()" is short-hand for the jQuery() function</span></li>
+                        <li><span class="NotShown">The jQuery() function is most commonly called by passing
                         in either a selector or a callback.</span></li>
-                    <li><span class="NotShown">A <em>callback</em> is a function that is passed as an argument
+                        <li><span class="NotShown">A <em>callback</em> is a function that is passed as an argument
                         to another function and is executed after its parent function has completed.</span></li>
-                    <li><span class="NotShown">$( selector [, context ] )uses the selector string to select
+                        <li><span class="NotShown">$( selector [, context ] )uses the selector string to select
                         1 or more elements in the page to work with. The jQuery() function (see shorthand
                         above) — searches through the DOM for any elements that match the provided selector
                         and creates a new "jQuery" object that references these elements.</span></li>
-                    <li><span class="NotShown">A selector can be any CSS selector, as well as various jQuery-specific
-                        selectors, see a list at <a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp">
-                            w3schools</a>.</span></li>
-                    <li><span class="NotShown">The optional context argument lets you limit the search to
+                        <li><span class="NotShown">A selector can be any CSS selector, as well as various jQuery-specific
+                        selectors, see a list at <a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp">w3schools</a>.</span></li>
+                        <li><span class="NotShown">The optional context argument lets you limit the search to
                         children of a specific DOM node, instead of the entire page. By default, selectors
                         perform their searches within the DOM starting at the document root. However, the
                         "context" can be given for the search by using the optional second parameter to
@@ -473,222 +499,225 @@
                         can be restricted like so: $('div.foo').click(function() { $('span', this).addClass('bar');});
                         When the search for the span selector is restricted to the context of "this", only
                         spans within the clicked element will get the additional class.</span></li>
-                    <li><span class="NotShown">$( callback ) lets you set a callback function to be run
+                        <li><span class="NotShown">$( callback ) lets you set a callback function to be run
                         once the Web page has finished loading. This ensures that your code doesn't run
                         until all the elements within the page are available to the code, and it also lets
                         you begin running your code before all the external resources, such as images, have
                         fully loaded. Usually, <i>callback</i> will be your main function that kicks off
                         your script.</span></li>
-                    <li><span class="NotShown">"$(function(){})" is short-hand for "$(document).ready(function(){})"
+                        <li><span class="NotShown">"$(function(){})" is short-hand for "$(document).ready(function(){})"
                         - to avoid using this just put your &lt;script&gt; block at the bottom of the page
                         just above &lt;/html&gt;</span></li>
-                    <li><span class="NotShown">The function that is defined inside the "ready" parentheses
+                        <li><span class="NotShown">The function that is defined inside the "ready" parentheses
                         above, is a callback function.</span></li>
-                    <li><span class="NotShown">Selectors that begin with ":" are called psuedo selectors.
-                        For example ":first".</span></li>                       
-                    <li><span class="NotShown">Predicate Selectors: '^=' is Start With, '$=' is Ends With, '*=' is Contains. As in $("a[href*='weblogs']").css("border", "solid 5px yellow")</span></li> 
-                     <li><span class="NotShown">A callback function defined within a method call is called an anonymous function.  
+                        <li><span class="NotShown">Selectors that begin with ":" are called psuedo selectors.
+                        For example ":first".</span></li>
+                        <li><span class="NotShown">Predicate Selectors: '^=' is Start With, '$=' is Ends With, '*=' is Contains. As in $("a[href*='weblogs']").css("border", "solid 5px yellow")</span></li>
+                        <li><span class="NotShown">A callback function defined within a method call is called an anonymous function.  
                         For example: $("ul:first li").each(function(i) { $(this).append(" Bam! " + i) }); </span></li>
-                     <li>When assigning a jQuery array to a var best practices says to preface it with <b>$</b>.
+                        <li>When assigning a jQuery array to a var best practices says to preface it with <b>$</b>.
                             For example: var $input = $("div form input");</li>
-                    <li><span class="NotShown"><a href="http://api.jquery.com">jQuery API</a></span></li>
-                    <li><span class="NotShown"><a href="http://www.w3schools.com/jquery/jquery_ref_events.asp">
-                        jQuery Event Methods</a></span></li>
-                    <li><span class="NotShown"><a href="http://www.w3schools.com/jquery/jquery_quiz.asp">
-                        Quiz</a></span></li>
-                </ul>
-                <br />
-                <br />
-                <span class="NotShown">jQuery is great for:</span>
-                <ul>
-                    <li><span class="NotShown">Adding animated effects to elements. jQuery lets you easily
+                        <li><span class="NotShown"><a href="http://api.jquery.com">jQuery API</a></span></li>
+                        <li><span class="NotShown"><a href="http://www.w3schools.com/jquery/jquery_ref_events.asp">jQuery Event Methods</a></span></li>
+                        <li><span class="NotShown"><a href="http://www.w3schools.com/jquery/jquery_quiz.asp">Quiz</a></span></li>
+                    </ul>
+                    <br />
+                    <br />
+                    <span class="NotShown">jQuery is great for:</span>
+                    <ul>
+                        <li><span class="NotShown">Adding animated effects to elements. jQuery lets you easily
                         add effects such as fading in/out, sliding in/out, and expanding/contracting.</span></li>
-                    <li><span class="NotShown">Manipulating the DOM. You can easily add, remove, and reorder
+                        <li><span class="NotShown">Manipulating the DOM. You can easily add, remove, and reorder
                         content in the Web page using just a couple of lines of code.</span></li>
-                    <li><span class="NotShown">Creating image slideshows. You can use jQuery effects to
+                        <li><span class="NotShown">Creating image slideshows. You can use jQuery effects to
                         build nice animated slideshows (lightboxes).</span></li>
-                    <li><span class="NotShown">Making drop-down menus. jQuery makes it easy to create multi-level
+                        <li><span class="NotShown">Making drop-down menus. jQuery makes it easy to create multi-level
                         dropdowns with animations.</span></li>
-                    <li><span class="NotShown">Creating drag-and-drop interfaces. Use jQuery to build a
+                        <li><span class="NotShown">Creating drag-and-drop interfaces. Use jQuery to build a
                         page with elements that can be repositioned or reordered simply by dragging and
                         dropping.</span></li>
-                    <li><span class="NotShown">Adding power to forms. With jQuery you can easily add complex
+                        <li><span class="NotShown">Adding power to forms. With jQuery you can easily add complex
                         client-side form validation, create auto-complete Ajax text fields that pull data
                         from a server-side database, and so on.</span></li>
-                    <li><span class="NotShown">jQuery UI - see <a href="http://jqueryui.com">http://jqueryui.com</a>
-                        - jQuery UI provides abstractions for low-level interaction and animation, advanced
+                        <li><span class="NotShown">jQuery UI - see <a href="http://jqueryui.com">http://jqueryui.com</a>
+                            - jQuery UI provides abstractions for low-level interaction and animation, advanced
                         effects and high-level, themeable widgets, built on top of the jQuery JavaScript
-                        library, that can be used to build interactive web applications. <a href="http://jquery.org/team/">
-                            See team</a>.</span></li>
-                    <li><span class="NotShown"><b>Making AJAX requests<sup>*</sup>.</b> These use JavaScript
+                        library, that can be used to build interactive web applications. <a href="http://jquery.org/team/">See team</a>.</span></li>
+                        <li><span class="NotShown"><b>Making AJAX requests<sup>*</sup>.</b> These use JavaScript
                         to request additional data from the Web server without having to reload the page.
                         <br />
+                            <br />
+                            AJAX is an acronym for asynchronous JavaScript and XML.
                         <br />
-                        AJAX is an acronym for asynchronous JavaScript and XML.
-                        <br />
-                        <br />
-                        <b>a·syn·chro·nous</b>: 1. not occurring at the same time. 2. (of a computer or
+                            <br />
+                            <b>a·syn·chro·nous</b>: 1. not occurring at the same time. 2. (of a computer or
                         other electrical machine) having each operation started only after the preceding
                         operation is completed.<br />
-                        <br />
-                        In programming, asynchronous events are those occurring independently of the main
+                            <br />
+                            In programming, asynchronous events are those occurring independently of the main
                         program flow. In other words "asynchronous" is the ability to handle processes <b><i>independently</i></b>
-                        from other processes. Synchronous which is the opposite of asynchronous, then means
+                            from other processes. Synchronous which is the opposite of asynchronous, then means
                         that processes are dependent upon other processes.
                         <br />
-                        <br />
-                        Prehaps a better name for AJAX would be <span style="font-weight:bold; font-size:large">IJAX</span>, as in <b>INDEPENDENT</b> javascript and XML?
+                            <br />
+                            Prehaps a better name for AJAX would be <span style="font-weight: bold; font-size: large">IJAX</span>, as in <b>INDEPENDENT</b> javascript and XML?
                         
                         </span></li>
-                </ul>
-                <br />
-                <br />
-                <span class="NotShown"><b>XMLHttpRequest</b> is a JavaScript object that was designed
+                    </ul>
+                    <br />
+                    <br />
+                    <span class="NotShown"><b>XMLHttpRequest</b> is a JavaScript object that was designed
                     by Microsoft, adopted by Mozilla, and is now being standardized in the W3C. It provides
                     an easy way to retrieve data at a URL. Despite its name, XMLHttpRequest can be used
                     to retrieve any type of data, not just XML, and it supports protocols other than
                     HTTP (including file and ftp).
                     <br />
-                    <br />
-                    To create an instance of XMLHttpRequest, simply do this: var req = new XMLHttpRequest();
+                        <br />
+                        To create an instance of XMLHttpRequest, simply do this: var req = new XMLHttpRequest();
                     Learn more <a href="https://developer.mozilla.org/en/xmlhttprequest">here</a>.
                     <br />
-                    <br />
-                    The XMLHttpRequest object is <b>a developer's dream</b>, because you can:
+                        <br />
+                        The XMLHttpRequest object is <b>a developer's dream</b>, because you can:
                     <ul>
                         <li>Update a web page without reloading the page</li>
                         <li>Request data from a server after the page has loaded </li>
                         <li>Receive data from a server after the page has loaded</li>
                         <li>Send data to a server in the background</li>
                     </ul>
-                    <br />
-                    <br />
-                    With the advent of cross-browser JavaScript libraries such as jQuery (or ProtoType),
+                        <br />
+                        <br />
+                        With the advent of cross-browser JavaScript libraries such as jQuery (or ProtoType),
                     developers can invoke XMLHttpRequest functionality without coding directly to the
                     API. JQuery objects represent elements from the current client-side DOM. They all
                     have a .load() method that takes a URI parameter and makes an XMLHttpRequest to
                     that URI, then by default places any returned HTML into the HTML element represented
                     by the jQuery object. </span>
-                <br />
-                <br />
-                <span class="NotShown">
-                    <h3>
-                        Key jQuery ajax methods</h3>
-                    <ol>
-                        <li><b>$.ajax()</b> Performs an AJAX request</li>
-                        <li><b>$.ajaxSend()</b> Specifies a function to run before any and all AJAX requests
+                    <br />
+                    <br />
+                    <span class="NotShown">
+                        <h3>Key jQuery ajax methods</h3>
+                        <ol>
+                            <li><b>$.ajax()</b> Performs an AJAX request</li>
+                            <li><b>$.ajaxSend()</b> Specifies a function to run before any and all AJAX requests
                             are sent. </li>
-                        <li><b>$.ajaxComplete()</b> Specifies a function to run when any and all AJAX requests
+                            <li><b>$.ajaxComplete()</b> Specifies a function to run when any and all AJAX requests
                             complete, whether or not the request was successful</li>
-                        <li><b>$.ajaxSuccess()</b> Specifies a function to run an AJAX request completes successfully.</li>
-                        <li><b>$.getScript()</b> Loads (and executes) a JavaScript from the a server using an
+                            <li><b>$.ajaxSuccess()</b> Specifies a function to run an AJAX request completes successfully.</li>
+                            <li><b>$.getScript()</b> Loads (and executes) a JavaScript from the a server using an
                             AJAX HTTP GET request</li>
-                        <li><b>#.load()</b>Loads data from a server and puts the returned HTML into the specified
+                            <li><b>#.load()</b>Loads data from a server and puts the returned HTML into the specified
                             element. </li>
-                        <li><b>$.post()</b> Loads data from a server using an AJAX HTTP POST request</li>
-                        <li><b>$.get()</b> Loads data from a server using an AJAX HTTP GET request</li>
-                        <li><a href="http://www.w3schools.com/jquery/jquery_ref_ajax.asp">[more]</a></li>
-                    </ol>
-                </span>
-                <br />
-                <br />
-                <div class="NotShown">
-                    <b>&nbsp;$.ajax()</b>
-                    <div>
-                        <small>Let AJAX change this text</small>
-                    </div>
-                    <button id="button1">
-                        Using $.ajax()</button>
+                            <li><b>$.post()</b> Loads data from a server using an AJAX HTTP POST request</li>
+                            <li><b>$.get()</b> Loads data from a server using an AJAX HTTP GET request</li>
+                            <li><a href="http://www.w3schools.com/jquery/jquery_ref_ajax.asp">[more]</a></li>
+                        </ol>
+                    </span>
                     <br />
                     <br />
-                    <b>&nbsp;$.ajaxSend()</b>
-                    <div>
-                        Uncomment $("div small").ajaxSend in the javascript, and then click the button above.</div>
-                    <br />
-                    <b>&nbsp;$.ajaxComplete()</b>
-                    <div>
-                        Uncomment $("div small").ajaxComplete in the javascript, and then click the button
-                        above.</div>
-                    <br />
-                    <b>&nbsp;$.ajaxSucess()</b>
-                    <div>
-                        Uncomment $("div small").ajaxSuccess in the javascript, and then click the button
-                        above.</div>
-                    <br />
-                    <b>&nbsp;$.getScript()</b>
-                    <div>
-                        <button id="button2">
-                            Using $.getScript()</button></div>
-                    <br />
-                    <b>&nbsp;$.load()</b>
-                    <div id="divBtn3">
-                        <button id="button3">
-                            Using $.load()</button></div>
-                    <br />
-                    <b>&nbsp;$.get() Example</b>
-                    <div>
-                        When we go to <a href="http://jquery.bassistance.de/starterkit/rate.php?rating=2"
-                            target="_blank">http://jquery.bassistance.de/starterkit/rate.php?rating=2</a>
-                        we get back XML.
+                    <div class="NotShown">
+                        <b>&nbsp;$.ajax()</b>
+                        <div>
+                            <small>Let AJAX change this text</small>
+                        </div>
+                        <button id="button1">
+                            Using $.ajax()</button>
                         <br />
-                        We use jQuery to traverse the returned XML and get the text of the 'count' node.
                         <br />
-                        (this example shows the long-hand way to traverse the XML, the other examples use
+                        <b>&nbsp;$.ajaxSend()</b>
+                        <div>
+                            Uncomment $("div small").ajaxSend in the javascript, and then click the button above.
+                        </div>
+                        <br />
+                        <b>&nbsp;$.ajaxComplete()</b>
+                        <div>
+                            Uncomment $("div small").ajaxComplete in the javascript, and then click the button
+                        above.
+                        </div>
+                        <br />
+                        <b>&nbsp;$.ajaxSucess()</b>
+                        <div>
+                            Uncomment $("div small").ajaxSuccess in the javascript, and then click the button
+                        above.
+                        </div>
+                        <br />
+                        <b>&nbsp;$.getScript()</b>
+                        <div>
+                            <button id="button2">
+                                Using $.getScript()</button>
+                        </div>
+                        <br />
+                        <b>&nbsp;$.load()</b>
+                        <div id="divBtn3">
+                            <button id="button3">
+                                Using $.load()</button>
+                        </div>
+                        <br />
+                        <b>&nbsp;$.get() Example</b>
+                        <div>
+                            When we go to <a href="http://jquery.bassistance.de/starterkit/rate.php?rating=2"
+                                target="_blank">http://jquery.bassistance.de/starterkit/rate.php?rating=2</a>
+                            we get back XML.
+                        <br />
+                            We use jQuery to traverse the returned XML and get the text of the 'count' node.
+                        <br />
+                            (this example shows the long-hand way to traverse the XML, the other examples use
                         short-hand)
-                    </div>
-                    <br />
-                    <div id="divGet" style="cursor: pointer; text-decoration: underline">
-                        Click</div>
-                    <div id="divGet2" style="cursor: pointer;">
-                        Another Example. Uses Squared</div>
-                    <br />
-                    <b>&nbsp;$.post() Example 1</b>
-                    <br />
-                    &nbsp;See Service1 at <a href="http://localhost/WebService1/Service1.asmx" target="_blank">
-                        http://localhost/WebService1/Service1.asmx</a> | <a href="\\USA906L\C$\Users\Walterv\Documents\Visual Studio 2008\Projects\WebService1">
-                            Explore</a>
-                    <div id="placeHolder1" style="padding-left: 10px;">
-                    </div>
-                    <br />
-                    <b>&nbsp;$.post() Example 2</b>
-                    <br />
-                    Uses the jQuery UI "Throbber".
+                        </div>
+                        <br />
+                        <div id="divGet" style="cursor: pointer; text-decoration: underline">
+                            Click
+                        </div>
+                        <div id="divGet2" style="cursor: pointer;">
+                            Another Example. Uses Squared
+                        </div>
+                        <br />
+                        <b>&nbsp;$.post() Example 1</b>
+                        <br />
+                        &nbsp;See Service1 at <a href="http://localhost/WebService1/Service1.asmx" target="_blank">http://localhost/WebService1/Service1.asmx</a> | <a href="\\USA906L\C$\Users\Walterv\Documents\Visual Studio 2008\Projects\WebService1">Explore</a>
+                        <div id="placeHolder1" style="padding-left: 10px;">
+                        </div>
+                        <br />
+                        <b>&nbsp;$.post() Example 2</b>
+                        <br />
+                        Uses the jQuery UI "Throbber".
                     <div id="placeHolder2" style="padding-left: 10px;">
                     </div>
-                    <div>
-                        <br />
-                        Use the F12 Developer Tools "Network" tab to learn more about how this AJAX is done.
-                        The tool will show the calls to the webservice.</div>
-                </div>
-                <button id="buttonPPT">
-                    Next Bullet</button>
-                    </details>
+                        <div>
+                            <br />
+                            Use the F12 Developer Tools "Network" tab to learn more about how this AJAX is done.
+                        The tool will show the calls to the webservice.
+                        </div>
+                    </div>
+                    <button id="buttonPPT">
+                        Next Bullet</button>
+                </details>
             </fieldset>
             <div style="clear: both">
             </div>
             <fieldset class="AutoHeight AutoWidth" <% if(ID=="99"){Response.Write(@"style='display:none'");} %>>
                 <legend>JSON</legend>
-                <div style="padding: 5px"><a href="docs/JSONNotes.txt">Notes</a>.
+                <div style="padding: 5px">
+                    <a href="docs/JSONNotes.txt">Notes</a>.
                 </div>
-                </fieldset>
+            </fieldset>
             <div style="clear: both">
             </div>
             <fieldset class="AutoHeight AutoWidth" <% if(ID=="99"){Response.Write(@"style='display:none'");} %>>
                 <legend>HTML 5</legend>
                 <div style="padding: 5px">
                     <details>
-                    <a href="docs/IntroducingHTML5.docx" target="_blank">Bryans Demo Notes</a>
-                    <br />
-                    <br />
-                    <a href="http://html5doctor.com/html5-custom-data-attributes/"><b>HTML5 Custom Data Attributes (data-*)</b></a>: Custom data attributes are intended 
+                        <a href="docs/IntroducingHTML5.docx" target="_blank">Bryans Demo Notes</a>
+                        <br />
+                        <br />
+                        <a href="http://html5doctor.com/html5-custom-data-attributes/"><b>HTML5 Custom Data Attributes (data-*)</b></a>: Custom data attributes are intended 
                     to store custom data private to the page or application, for which there are no more appropriate attributes or elements. 
                     Every HTML element may have any number of custom data attributes specified, with any value.
                     <br />
-                    <br />
-                    Using data- attributes with JavaScript: accessing an element’s dataset property. This dataset property — part of the new 
+                        <br />
+                        Using data- attributes with JavaScript: accessing an element’s dataset property. This dataset property — part of the new 
                     HTML5 JavaScript APIs — will return a DOMStringMap object of all the selected element's data- attributes
-                    <br />  
-                    <br />                                          
+                    <br />
+                        <br />
                         <pre><code>&lt;div id='sunflower' data-leaves='47' data-plant-height='2.4m'&gt;&lt;/div&gt;
                         &lt;script&gt;
                         // 'Getting' data-attributes using dataset 
@@ -700,61 +729,64 @@
                         plant.dataset.plantHeight = '3.6m';  // Cracking fertiliser
                         &lt;/script&gt;</code></pre>
 
-                    <br />
-                    <br />
-                    <div style="position:relative;">
-                OPERA 11 is the best HTML 5 browser as of July, 2011 . Chrome
+                        <br />
+                        <br />
+                        <div style="position: relative;">
+                            OPERA 11 is the best HTML 5 browser as of July, 2011 . Chrome
                 12, and FF 5 are also pretty good. In the Browser info section, I am using the display
                 tag, and Chrome 12 is the only browser recognizing it. 
-                <br /><br />Canvas:<br />
-                <canvas id="canvas" width="300" height="150" style="border: solid 1px black"></canvas>
-                <form name="frmCheckBox" id="frmCheckBox" method="get">
-                Placeholder:<input type="text" required placeholder="PLACEHOLDER" spellcheck />
                 <br />
-                E-mail:<input type="email" name="user_email1" />
-                <br />
-                E-mail:
+                            <br />
+                            Canvas:<br />
+                            <canvas id="canvas" width="300" height="150" style="border: solid 1px black"></canvas>
+                            <form name="frmCheckBox" id="frmCheckBox" method="get">
+                                Placeholder:<input type="text" required placeholder="PLACEHOLDER" spellcheck />
+                                <br />
+                                E-mail:<input type="email" name="user_email1" />
+                                <br />
+                                E-mail:
                 <input type="email" name="user_email2" />
-                <br />
-                Search:
+                                <br />
+                                Search:
                 <input type="search" name="search1" />
-                <br />
-                Telephone
+                                <br />
+                                Telephone
                 <input type="tel" name="tel1" />
-                <br />
-                URL
+                                <br />
+                                URL
                 <input type="url" name="url1" />
-                <br />
-                DateTime
+                                <br />
+                                DateTime
                 <input type="datetime" name="datetime1" />
-                <br />
-                Date
+                                <br />
+                                Date
                 <input type="date" name="date1" />
-                <br />
-                Datetime-local
+                                <br />
+                                Datetime-local
                 <input type="datetime-local" name="date2" />
-                <br />
-                Month
+                                <br />
+                                Month
                 <input type="month" name="month1" />
-                <br />
-                Week
+                                <br />
+                                Week
                 <input type="week" name="week1" />
-                <br />
-                Time
+                                <br />
+                                Time
                 <input type="time" name="time1" />
-                <br />
-                Number
+                                <br />
+                                Number
                 <input type="number" name="number1" />
-                <br />
-                Color
+                                <br />
+                                Color
                 <input type="color" name="color1" />
-                <br />
-                Range
+                                <br />
+                                Range
                 <input type="range" name="range1" />
-                <br />
-                <input type="submit" />
-                </form></div>
-                </details>
+                                <br />
+                                <input type="submit" />
+                            </form>
+                        </div>
+                    </details>
                 </div>
             </fieldset>
             <div style="clear: both">
@@ -763,11 +795,10 @@
                 <legend>Sitefinity</legend>
                 <ul>
                     <li>Sitefinity_3_7_2136_standard&nbsp;&nbsp; <a href="#">Browse</a> | <a href="\\USA906L\C$\Program Files\Common Files\telerik"
-                        target="_blank">Explore</a> && | <a href="\\USA906L\C$\Program Files\telerik" target="_blank">
-                            Explore</a></li>
+                        target="_blank">Explore</a> && | <a href="\\USA906L\C$\Program Files\telerik" target="_blank">Explore</a></li>
                 </ul>
             </fieldset>
-            
+
             <div style="clear: both">
             </div>
             <fieldset class="AutoHeight AutoWidth" <% if(ID=="99"){Response.Write(@"style='display:none'");} %>>
@@ -784,11 +815,11 @@
                     <li>use LIKE instead of declaring input parameter types <a href="informix/DateAndIdentity.txt">Example</a>.</li>
                     <li>top 100 - first 100 </li>
                 </ul>
-                
-                
+
+
                 <a href="docs/JSONNotes.txt">Notes</a>.
-                </fieldset>
-                
+            </fieldset>
+
             <div style="clear: both">
             </div>
             <fieldset class="AutoHeight AutoWidth" <% if(ID=="99"){Response.Write(@"style='display:none'");} %>>
@@ -797,8 +828,7 @@
                     <li><a href="http://weblogs.asp.net/rajbk/archive/2004/07/20/what-s-the-deal-with-databinder-eval-and-container-dataitem.aspx"
                         target="_blank">What's the deal with Databinder.Eval and Container.DataItem?</a></li>
                     <li><a href="http://aspalliance.com/809" target="_blank">Simple Factory Example</a></li>
-                    <li><a href="http://www.geekzilla.co.uk/View00FF7904-B510-468C-A2C8-F859AA20581F.htm">
-                        DateTime.ToString() Patterns </a></li>
+                    <li><a href="http://www.geekzilla.co.uk/View00FF7904-B510-468C-A2C8-F859AA20581F.htm">DateTime.ToString() Patterns </a></li>
                     <li><a href="docs/GeneralCodingBestPractices.docx">General Coding Best Practices</a></li>
                 </ul>
             </fieldset>
