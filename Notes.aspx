@@ -420,10 +420,14 @@
             <fieldset class="AutoHeight AutoWidth">
                 <legend>Git Commands</legend>
                 <details>
-                    Local repo consists of: Working dir  --> Index (staging area)  --> Head (last commit)
+                    Local repo consists of: Working dir  --> Index (staging area)  --> Head (Local Repo [the local ".git" dir]) --> Remote Repo (gitHub)
+                    <br />
+                    you can have a "stash" below Working dir.
+                    <br />
+                    <a href="img/MgaV9.png">pic</a>
                     <ul>
                         <li>git status</li>
-                        <li>git checkout -- "<"filename">"<br /><i>this replaces the changes in your working tree with the last content in HEAD</i></li>
+                        <li>git checkout -- &lt;filename&gt;<br /><i>this replaces the changes in your working tree with the last content in HEAD</i></li>
                         <li>git reset --hard and git clean -fd<br />
                             <i>To revert uncommitted changes issue this two commands (The first one will revert existing files modified since last commit, and the second one will remove all files added since last commit.)</i></li>
                     </ul>
