@@ -1,5 +1,4 @@
 <%@ Page Language="c#" %>
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -26,15 +25,14 @@
 </head>
 <body>
     <div id="MainBody">
-        <div id="HeaderText">
-            <span id="Logo">&#9819;</span>Website Shortcuts And Info
-        </div>
+        <div id="HeaderText"><span id="Logo">&#9819;</span>KLAS Websites</div>
         <div id="Nav">
+            <a href="Sites.aspx?id=<%= ID %>">Sites</a> |
+            <a href="Notes.aspx?id=<%= ID %>">Notes</a> |
             <a href="http://jira.klasresearch.com:8080/secure/Dashboard.jspa">JIRA</a> | 
-            <a href="Notes.aspx?id=<%= ID %>">Notes</a>
+        <a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a>
         </div>
-        <div id="HeaderSpacer">
-        </div>
+        <div style="clear:both"></div>
         <div id="col1">
             <fieldset>
                 <legend>ToolBox</legend><i>ASP.NET 3.5? and MVC 5?</i>
@@ -49,11 +47,13 @@
                         target="_blank">Explore</a></li>
                     <li>Live:&nbsp;&nbsp; <a href="http://toolbox.klasresearch.com">http://toolbox.klasresearch.com</a></li>
                 </ul>
-                <p>If asked "who is your hero?"<br />
-                    Answer: Super Dave</p>
+                <p>
+                    If asked "who is your hero?"<br />
+                    Answer: Super Dave
+                </p>
             </fieldset>
             <div class="SpacerBetweenFieldSets">
-            </div>            
+            </div>
         </div>
 
         <div id="col1Spacer">
