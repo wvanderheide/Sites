@@ -26,15 +26,12 @@
 </head>
 <body>
     <div id="MainBody">
-        <div id="Nav">
-            <a href="http://jira.klasresearch.com:8080/secure/Dashboard.jspa">JIRA</a> | <a href="?id=1">Style 1</a> | <a href="?id=2">Style 2</a> | <a href="?">No Style</a> | <a href="Notes.aspx?id=<%= ID %>">Notes</a>
-        </div>
-        <div id="NavSpacer">
-        </div>
-        <div id="HeaderLogo">
-        </div>
         <div id="HeaderText">
-            Website Shortcuts And Info
+            <span id="Logo">&#9819;</span>Website Shortcuts And Info
+        </div>
+        <div id="Nav">
+            <a href="http://jira.klasresearch.com:8080/secure/Dashboard.jspa">JIRA</a> | 
+            <a href="Notes.aspx?id=<%= ID %>">Notes</a>
         </div>
         <div id="HeaderSpacer">
         </div>
@@ -56,16 +53,7 @@
                     Answer: Super Dave</p>
             </fieldset>
             <div class="SpacerBetweenFieldSets">
-            </div>
-            <fieldset>
-                <legend>Hosts</legend>
-                <ul>
-                    <li>The hosts file maps IP addresses to a name.</li>
-                    <li>In IIS Manager I have added a host name to the "bindings" of each of the sites running on my box.</li>
-                    <li>So the hosts file maps 127.0.0.1 to a name like "MyIntranet" or "wvander-research" .
-                        The hosts file is located <a href="\\Wvanderh-dt\c$\Windows\System32\drivers\etc">here</a> (\\Wvanderh-dt\c$\Windows\System32\drivers\etc)</li>
-                </ul>
-            </fieldset>
+            </div>            
         </div>
 
         <div id="col1Spacer">

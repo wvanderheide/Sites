@@ -94,31 +94,30 @@ div.SpacerBetweenFieldSets {
 
 #Nav {
     text-align: right;
+    float: right;
+    width:48%;
 }
 
 #NavSpacer {
     display: none;
 }
 
-#HeaderLogo {
-    background-image: url('http://myintranet/img/SitesLogo1.jpg');
-    background-repeat: no-repeat;
-    background-color: transparent;
-    height: 100px;
-    width: 100px;
-    float: left;
+#Logo {
+    color: #3399ff;
+    font-size: 80px;
+    font-weight: 900;
 }
 
 #HeaderText {
     background-color: transparent;
-    padding: 40px 0 0 0;
-    height: 60px;
-    width: 300px;
     float: left;
     color: #666;
+    width:48%;
     font-family: Verdana;
     font-size: 18px;
     font-weight: 900;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 #HeaderSpacer {
