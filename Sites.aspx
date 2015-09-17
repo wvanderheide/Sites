@@ -99,7 +99,7 @@
         </div>
     </div>
     <div id="Footer">
-        Design by <a href="mailto:WalterV@neways.com">Walter VanderHeide</a>
+        Design by <a href="mailto:Walter.Vanderheide@KlasResearch.com">Walter VanderHeide</a>
     </div>
 </body>
 </html>

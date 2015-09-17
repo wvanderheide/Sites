@@ -159,11 +159,11 @@ div.SpacerBetweenFieldSets {
 
 #Footer {
     font-style: normal;
-    text-align: center;
+    text-align: left;
     background-color: transparent;
     padding: 15px 0px 1px 0px;
     height: 20px;
-    width: 940px;
+    width:100%;
     color: #666;
     font-family: Verdana;
     font-size: 10px;

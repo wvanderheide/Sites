@@ -624,20 +624,20 @@
         <fieldset class="AutoHeight AutoWidth" <% if(ID=="99"){Response.Write(@"style='display:none'");} %>>
             <legend>HTML 5</legend>
             <div style="padding: 5px">
-                <details>
-                    <a href="docs/IntroducingHTML5.docx" target="_blank">Bryans Demo Notes</a>
-                    <br />
-                    <br />
-                    <a href="http://html5doctor.com/html5-custom-data-attributes/"><b>HTML5 Custom Data Attributes (data-*)</b></a>: Custom data attributes are intended 
+                <%--<details>--%>
+                <a href="docs/IntroducingHTML5.docx" target="_blank">Bryans Demo Notes</a>
+                <br />
+                <br />
+                <a href="http://html5doctor.com/html5-custom-data-attributes/"><b>HTML5 Custom Data Attributes (data-*)</b></a>: Custom data attributes are intended 
                     to store custom data private to the page or application, for which there are no more appropriate attributes or elements. 
                     Every HTML element may have any number of custom data attributes specified, with any value.
                     <br />
-                    <br />
-                    Using data- attributes with JavaScript: accessing an element’s dataset property. This dataset property — part of the new 
+                <br />
+                Using data- attributes with JavaScript: accessing an element’s dataset property. This dataset property — part of the new 
                     HTML5 JavaScript APIs — will return a DOMStringMap object of all the selected element's data- attributes
                     <br />
-                    <br />
-                    <pre><code>&lt;div id='sunflower' data-leaves='47' data-plant-height='2.4m'&gt;&lt;/div&gt;
+                <br />
+                <pre><code>&lt;div id='sunflower' data-leaves='47' data-plant-height='2.4m'&gt;&lt;/div&gt;
                         &lt;script&gt;
                         // 'Getting' data-attributes using dataset 
                         var plant = document.getElementById('sunflower');
@@ -648,64 +648,67 @@
                         plant.dataset.plantHeight = '3.6m';  // Cracking fertiliser
                         &lt;/script&gt;</code></pre>
 
-                    <br />
-                    <br />
-                    <div style="position: relative;">
-                        OPERA 11 is the best HTML 5 browser as of July, 2011 . Chrome
+                <br />
+                <br />
+                <div style="position: relative;">
+                    OPERA 11 is the best HTML 5 browser as of July, 2011 . Chrome
                 12, and FF 5 are also pretty good. In the Browser info section, I am using the display
                 tag, and Chrome 12 is the only browser recognizing it. 
                 <br />
+                    <br />
+                    Canvas:<br />
+                    <canvas id="canvas" width="300" height="150" style="border: solid 1px black"></canvas>
+                    <form name="frmCheckBox" id="frmCheckBox" method="get">
+                        Placeholder:<input type="text" id="placeHolder" required placeholder="First Name" spellcheck title="Title attribute provides sub error message" />
+                        <script>
+                            document.getElementById('placeHolder').setCustomValidity('Default error message is set by Chrome, change it with javascript setCustomValidity method.');
+                        </script>
                         <br />
-                        Canvas:<br />
-                        <canvas id="canvas" width="300" height="150" style="border: solid 1px black"></canvas>
-                        <form name="frmCheckBox" id="frmCheckBox" method="get">
-                            Placeholder:<input type="text" required placeholder="PLACEHOLDER" spellcheck />
-                            <br />
-                            E-mail:<input type="email" name="user_email1" />
-                            <br />
-                            E-mail:
+                        E-mail:<input type="email" name="user_email1" autofocus />
+                        <br />
+                        E-mail:
                 <input type="email" name="user_email2" />
-                            <br />
-                            Search:
+                        <br />
+                        Search:
                 <input type="search" name="search1" />
-                            <br />
-                            Telephone
+                        <br />
+                        Telephone
                 <input type="tel" name="tel1" />
-                            <br />
-                            URL
+                        <br />
+                        URL
                 <input type="url" name="url1" />
-                            <br />
-                            DateTime
+                        <br />
+                        DateTime
                 <input type="datetime" name="datetime1" />
-                            <br />
-                            Date
+                        <br />
+                        Date
                 <input type="date" name="date1" />
-                            <br />
-                            Datetime-local
+                        <br />
+                        Datetime-local
                 <input type="datetime-local" name="date2" />
-                            <br />
-                            Month
+                        <br />
+                        Month
                 <input type="month" name="month1" />
-                            <br />
-                            Week
+                        <br />
+                        Week
                 <input type="week" name="week1" />
-                            <br />
-                            Time
+                        <br />
+                        Time
                 <input type="time" name="time1" />
-                            <br />
-                            Number
+                        <br />
+                        Number
                 <input type="number" name="number1" />
-                            <br />
-                            Color
+                        <br />
+                        Color
                 <input type="color" name="color1" />
-                            <br />
-                            Range
+                        <br />
+                        Range
                 <input type="range" name="range1" />
-                            <br />
-                            <input type="submit" />
-                        </form>
-                    </div>
-                </details>
+                        <br />
+                        <input type="submit" />
+                    </form>
+                </div>
+                <%-- </details>--%>
             </div>
         </fieldset>
         <div style="clear: both">
@@ -842,13 +845,10 @@
             </ul>
         </fieldset>
     </div>
-    </div>
     <div style="clear: both">
     </div>
-    <div <% if(ID=="99"){Response.Write(@"style='display:none'");} %>>
-        <hr />
-        ################ Playground ################
-        <hr />
+    <div id="Footer">
+        Design by <a href="mailto:Walter.Vanderheide@KlasResearch.com">Walter VanderHeide</a>
     </div>
 </body>
 </html>
