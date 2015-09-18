@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
 </head>
 <body>
 
@@ -14,6 +20,23 @@
         <h1>My First Bootstrap Page</h1>
         <p>This is some text.</p>
     </div>
-    See http://www.w3schools.com/bootstrap/bootstrap_typography.asp
+
+    See <a href="http://www.w3schools.com/bootstrap/bootstrap_case_container.asp">Bootstrap Case: My First Bootstrap Website</a>
+
+
+    <!-- Single button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+    <br /><br />
+    <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
 </body>
 </html>
