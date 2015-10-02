@@ -830,7 +830,8 @@
             </ul>
             <br />
             <br />
-            &nbsp;The hosts file is located <a href="\\Wvanderh-dt\c$\Windows\System32\drivers\etc">here</a> (\\Wvanderh-dt\c$\Windows\System32\drivers\etc)
+            &nbsp;The hosts file is located <a href="\\Wvanderh-dt\c$\Windows\System32\drivers\etc">here</a> (C:\Windows\System32\drivers\etc)
+		<br /><b>To modify the hosts file you must open it in notepad with notepad being run as ADMIN</b>
         </fieldset>
 
         <div style="clear: both">
