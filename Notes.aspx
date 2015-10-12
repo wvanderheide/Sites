@@ -844,6 +844,15 @@
                 <li><a href="http://www.geekzilla.co.uk/View00FF7904-B510-468C-A2C8-F859AA20581F.htm">DateTime.ToString() Patterns </a></li>
                 <li><a href="docs/GeneralCodingBestPractices.docx">General Coding Best Practices</a></li>
             </ul>
+            <br/>
+            <br/>
+            <b>Printing a directory listing </b>
+            <br/>
+            1. Open a cmd window for a specific dir (go to the directory in windows explorer, shift and right click, select open cmd window here.)
+            <br/>
+            2. type in dir > filename.txt
+            <br/>
+            http://www.howtogeek.com/98064/how-to-print-or-save-a-directory-listing-to-a-file/
         </fieldset>
     </div>
     <div style="clear: both">
