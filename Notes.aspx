@@ -206,7 +206,7 @@
             $("#button1").click(function () {
                 $("#button1").hide();
                 $.ajax({
-                    url: "docs/Text.txt", success: function (urlContent) {
+                	url: "js/alert.txt", success: function (urlContent) {
                         var x = "<hr />";
                         $("div small").text(x + urlContent);
                         $("#button1").slideDown('slow');
@@ -664,7 +664,7 @@
                             document.getElementById('placeHolder').setCustomValidity('Default error message is set by Chrome, change it with javascript setCustomValidity method.');
                         </script>
                         <br />
-                        E-mail:<input type="email" name="user_email1" autofocus />
+                        E-mail:<input type="email" name="user_email1" />
                         <br />
                         E-mail:
                 <input type="email" name="user_email2" />
@@ -854,6 +854,27 @@
             <br/>
             http://www.howtogeek.com/98064/how-to-print-or-save-a-directory-listing-to-a-file/
         </fieldset>
+
+    <hr/>
+		<input type="text" name="test1Name" id="test1Id" autofocus value="1" />
+		<%--<input type="text" name="test1Name" id="test1Id" value="2" />--%>
+		<script>
+			$(document).ready(function () {
+				$("#test1Id").blur(function () {
+					$.post("post.aspx",
+					{
+						name: $('#test1Id').val(),
+						city: "Duckburg"
+					},
+					function (data, status) {
+						alert("Data: " + data + "\nStatus: " + status);
+					});
+				});
+			});
+</script>
+
+		
+<button>Send an HTTP POST request to a page and get the result back</button>
     </div>
     <div style="clear: both">
     </div>
