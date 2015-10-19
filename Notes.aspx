@@ -856,7 +856,7 @@
         </fieldset>
 
     <hr/>
-		<input type="text" name="test1Name" id="test1Id" autofocus value="1" />
+		<input type="text" name="test1Name" id="test1Id" value="1" />
 		<%--<input type="text" name="test1Name" id="test1Id" value="2" />--%>
 		<script>
 			$(document).ready(function () {
