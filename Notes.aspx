@@ -335,6 +335,11 @@
                             <i>this replaces the changes in your working tree with the last content in HEAD</i></li>
                         <li>git reset --hard and git clean -fd<br />
                             <i>To revert uncommitted changes issue this two commands (The first one will revert existing files modified since last commit, and the second one will remove all files added since last commit.)</i></li>
+						<li>When you do a <b>git merge</b>, the result of the merged branches is placed on your current branch.
+							<br/>git checkout master
+							<br/>git merge BranchName
+							<br/><a href="http://www.gitguys.com/topics/merging-branches-without-a-conflict/">More Branching...</a>
+							</li>
                     </ul>
                     <br />
                     <a href="http://rogerdudler.github.io/git-guide/">Git Basics</a> | 
