@@ -30,6 +30,7 @@
             <a href="Sites.aspx?id=<%= ID %>">Sites</a> |
             <a href="Notes.aspx?id=<%= ID %>">Notes</a> |
             <a href="http://jira.klasresearch.com:8080/secure/Dashboard.jspa">JIRA</a> | 
+			<a href="http://visualstudioshortcuts.com/2015/" target="_blank">VS Studio Shortcuts</a> | 
             <a href="http://staging-kudu/deployments/dev-toolbox">Kudu</a> |
         <a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a>
         </div>
