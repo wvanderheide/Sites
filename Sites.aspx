@@ -21,6 +21,7 @@
         }
     </script>
 </head>
+
 <body>
     <div id="MainBody">
         <div id="HeaderText"><span id="Logo">&#9819;</span>KLAS Websites</div>
