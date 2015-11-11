@@ -11,7 +11,6 @@
         Response.Write("<title>Website Shortcuts" + ID + "</title>\r\n");
         Response.Write(@" <link rel=""stylesheet"" href=""style/SitesStyle" + ID + @".css"" type=""text/css"">" + "\r\n");      
     %>
-
     <script language="javascript" type="text/javascript">
         function ShowID(id) {
             //alert('Show');
