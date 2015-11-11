@@ -21,7 +21,6 @@
             document.getElementById(id).style.display = 'none';
         }
     </script>
-
 </head>
 <body>
     <div id="MainBody">
