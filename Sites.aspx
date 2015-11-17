@@ -30,7 +30,6 @@
             <a href="Notes.aspx?id=<%= ID %>">Notes</a> |
             <a href="http://jira.klasresearch.com:8080/secure/Dashboard.jspa">JIRA</a> | 
 			<a href="http://visualstudioshortcuts.com/2015/" target="_blank">VS Studio Shortcuts</a> | 
-            <a href="http://staging-kudu/deployments/dev-toolbox">Kudu</a> |
         <a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a>
         </div>
         <div style="clear:both"></div>
@@ -42,6 +41,7 @@
                         | <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Toolbox" target="_blank">Explore</a></li>
                     <li>dev:&nbsp;&nbsp; <a href="http://dev-toolbox/">Browse</a>
                         | <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
+					<li>Kudu: <a href="http://staging-kudu/deployments/dev-toolbox">dev-toolbox</a>
                     <li>QA:&nbsp;&nbsp; <a href="http://qa-toolbox/">Browse</a> | <a href="#"
                         target="_blank">Explore</a></li>
                     <li>Stage:&nbsp;&nbsp; <a href="http://staging-toolbox/">Browse</a> | <a href="#"
@@ -71,6 +71,7 @@
                         | <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
                     <li>dev:&nbsp;&nbsp; <a href="http://dev-research/">Browse</a>
                         | <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
+					<li>Kudu: <a href="http://staging-kudu/deployments/dev-research">dev-research</a>
                     <li>QA:&nbsp;&nbsp; <a href="http://qa-research/">Browse</a> | <a href="#"
                         target="_blank">Explore</a></li>
                     <li>Stage:&nbsp;&nbsp; <a href="http://staging
