@@ -74,8 +74,7 @@
 					<li>Kudu: <a href="http://staging-kudu/deployments/dev-research">dev-research</a>
                     <li>QA:&nbsp;&nbsp; <a href="http://qa-research/">Browse</a> | <a href="#"
                         target="_blank">Explore</a></li>
-                    <li>Stage:&nbsp;&nbsp; <a href="http://staging
-                        -research/">Browse</a> | <a href="#"
+                    <li>Stage:&nbsp;&nbsp; <a href="http://staging-research/">Browse</a> | <a href="#"
                             target="_blank">Explore</a></li>
                     <li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
                 </ul>
