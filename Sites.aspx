@@ -3,6 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<% 
 		String ID = string.Empty;
 
@@ -109,15 +110,21 @@
 	Using Git-Extensions
 	<ul>
 		<li>Pick KLAS from the Recent Repositories live</li>
-		<li>Click the blue "push" arrow</li>
+		<li>Get the lastest code by clicking the blue "pull" arrow <i class="fa fa-arrow-down"></i>.</li>
+		<li>Click the blue "push" arrow <i class="fa fa-arrow-up"></i>.</li>
 		<li>In the resulting dialog in the first drop down pick live-toolbox. [For QA or staging leave the dropdown on "origin"].  See <span style="text-decoration:underline; cursor: pointer; color:blue" onclick="var ele = document.getElementById('divImgPush'); ele.style.display = 'block'">pic</span></li>
 		<li>In the "Push Branches" section notice that the Branch to Push is "master" and in the "to" area type "live" in lowercase without the qoutes. [For QA or staging type in qa or staging]</li>
 	</ul>
+	
 	<div style="display: none" id="divImgPush">
 		<img src="img/pushtoLive.png" />
 	</div>
 
-	Click on the 
+	<b>HOT FIX</b>
+	<ul>
+		<li>See Git Release Process <a href="docs/GITReleaseProcess.docx">doc</a>.</li>
+	</ul>
+
     <div id="Footer">
 		Design by <a href="mailto:Walter.Vanderheide@KlasResearch.com">Walter VanderHeide</a>
 	</div>
