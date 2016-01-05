@@ -44,13 +44,15 @@
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Toolbox" target="_blank">Explore</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="http://dev-toolbox/">Browse</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
-					<li>Kudu: <a href="http://staging-kudu/deployments/dev-toolbox">dev-toolbox</a>
+					<li>Dev Kudu: <a href="http://staging-kudu/deployments/dev-toolbox">dev-toolbox</a>
 					<li>QA:&nbsp;&nbsp; <a href="http://qa-toolbox/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
+					<li>QA Kudu: <a href="http://staging-kudu/deployments/qa-toolbox">qa-toolbox</a>
 					<li>Stage:&nbsp;&nbsp; <a href="http://staging-toolbox/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
+					<li>Stage Kudu: <a href="http://staging-kudu/deployments/staging-toolbox">staging-toolbox</a>
 					<li>Live:&nbsp;&nbsp; <a href="http://toolbox.klasresearch.com">http://toolbox.klasresearch.com</a></li>
-					<li>Kudu: <a href="http://live-kudu/deployments/live-toolbox">Live-toolbox</a>
+					<li>Live Kudu: <a href="http://live-kudu/deployments/live-toolbox">Live-toolbox</a>
 				</ul>
 				<p>
 					If asked "who is your hero?"<br />
@@ -75,13 +77,15 @@
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="http://dev-research/">Browse</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
-					<li>Kudu: <a href="http://staging-kudu/deployments/dev-research">dev-research</a>
+					<li>Dev Kudu: <a href="http://staging-kudu/deployments/dev-research">dev-research</a>
 					<li>QA:&nbsp;&nbsp; <a href="http://qa-research/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
+					<li>QA Kudu: <a href="http://staging-kudu/deployments/qa-research">qa-research</a>
 					<li>Stage:&nbsp;&nbsp; <a href="http://staging-research/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
+					<li>Stage Kudu: <a href="http://staging-kudu/deployments/staging-research">staging-research</a>
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
-					<li>Kudu: <a href="http://live-kudu/deployments/live-research">Live-research</a>
+					<li>Live Kudu: <a href="http://live-kudu/deployments/live-research">Live-research</a>
 				</ul>
 				<p></p>
 			</fieldset>
@@ -107,17 +111,25 @@
 		</div>
 	</div>
 	<b>Push to Live</b>
-	Using Git-Extensions
+	Using Git-Extensions <i>(by merging Master branch into live-research repo  or live-toolbox repo)</i>
 	<ul>
 		<li>Pick KLAS from the Recent Repositories live</li>
 		<li>Get the lastest code by clicking the blue "pull" arrow <i class="fa fa-arrow-down"></i>.</li>
 		<li>Click the blue "push" arrow <i class="fa fa-arrow-up"></i>.</li>
-		<li>In the resulting dialog in the first drop down pick live-toolbox. [For QA or staging leave the dropdown on "origin"].  See <span style="text-decoration:underline; cursor: pointer; color:blue" onclick="var ele = document.getElementById('divImgPush'); ele.style.display = 'block'">pic</span></li>
+		<li>In the resulting dialog in the first drop down pick live-toolbox. [For QA or staging leave the dropdown on "origin"].  See <span style="text-decoration:underline; cursor: pointer; color:blue" onclick="var ele = document.getElementById('divImgPush'); ele.style.display = 'block'">pic</span>.  <i>One might also update the live-research repo and then push live-research to live as in this <span style="text-decoration:underline; cursor: pointer; color:blue" onclick="var ele = document.getElementById('divImgPush2'); ele.style.display = 'block'">pic</span></i>.
+			 
+
+		</li>
 		<li>In the "Push Branches" section notice that the Branch to Push is "master" and in the "to" area type "live" in lowercase without the qoutes. [For QA or staging type in qa or staging]</li>
 	</ul>
-	
+		
 	<div style="display: none" id="divImgPush">
 		<img src="img/pushtoLive.png" />
+	</div>
+	
+	
+	<div style="display: none" id="divImgPush2">
+		<img src="img/PushToLiveFromLive.png" />
 	</div>
 
 	<b>HOT FIX</b>
