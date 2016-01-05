@@ -325,6 +325,9 @@
             <fieldset>
                 <legend>Git Commands</legend>
                 <div style="padding: 5px">
+					To use git from the commandline use terminal on windows (cmd.exe), and read <a href="https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Powershell">https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Powershell</a>
+					<br />
+					<br />
                     Local repo consists of: Working dir  --> Index (staging area)  --> Head (Local Repo [the local ".git" dir]) --> Remote Repo (gitHub)
                     <br />
                     you can have a "stash" below Working dir.
