@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <%@ Page Language="c#" %>
-
 <head>
     <% 
         String ID = string.Empty;
