@@ -137,6 +137,16 @@
 		<li>See Git Release Process <a href="docs/GITReleaseProcess.docx">doc</a>.</li>
 	</ul>
 
+	<b>Tech Team Process Documentation</b>
+	<ul>
+		<li>Process <a href="docs/TechTeamProcessDocumentation.docx">doc</a>.</li>
+	</ul>
+	
+	<b>Accessing the database through code</b>
+	<ul>
+		<li>Basically we use Injection.  MVC Controller consumes a Domain Controller class which in turn consumes the Domain Repository which access the EDMX generated dbcontext.  Here are a few more details:  <a href="docs/AccessingDatabaseViaKLASCode.docx">doc</a>.</li>
+	</ul>
+
     <div id="Footer">
 		Design by <a href="mailto:Walter.Vanderheide@KlasResearch.com">Walter VanderHeide</a>
 	</div>
