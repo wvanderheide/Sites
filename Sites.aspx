@@ -33,7 +33,8 @@
             <a href="http://spam.klasresearch.com/FrontController">Spam (email and 1q)</a> |
             <a href="http://jira.klasresearch.com:8080/secure/RapidBoard.jspa?rapidView=1&quickFilter=1">JIRA</a> | 
 			<a href="http://visualstudioshortcuts.com/2015/" target="_blank">VS Studio Shortcuts</a> | 
-        <a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a>
+			<a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a> | 
+			<a href="https://wrapbootstrap.com/">Templates (for toolbox)</a>
 		</div>
 		<div style="clear: both"></div>
 		<div id="col1">
