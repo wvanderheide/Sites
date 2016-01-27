@@ -41,9 +41,9 @@
 			<fieldset>
 				<legend>ToolBox</legend><i>ASP.NET 3.5? and MVC 5?</i>
 				<ul>
-					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-toolbox/">Browse</a> or <a href="http://dev-toolbox/dashboard/default.aspx?SeeCacheKeys=1">Home Page</a>
+					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-toolbox/">Browse</a> 
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Toolbox" target="_blank">Explore</a></li>
-					<li>dev:&nbsp;&nbsp; <a href="http://dev-toolbox/">Browse</a>
+					<li>dev:&nbsp;&nbsp; <a href="http://dev-toolbox/">Browse</a> or <a href="http://dev-toolbox/dashboard/default.aspx?SeeCacheKeys=1">Home Page</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
 					<li>Dev Kudu: <a href="http://staging-kudu/deployments/dev-toolbox">dev-toolbox</a>
 					<li>QA:&nbsp;&nbsp; <a href="http://qa-toolbox/">Browse</a> | <a href="#"
