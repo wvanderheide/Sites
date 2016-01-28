@@ -88,7 +88,7 @@
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
 					<li>Live Kudu: <a href="http://live-kudu/deployments/live-research">Live-research</a>
 				</ul>
-				<p></p>
+				<p>Users:  mercedes@epic.com</p>
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
 			</div>
