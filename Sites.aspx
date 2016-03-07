@@ -57,6 +57,15 @@
 					<li>Live:&nbsp;&nbsp; <a href="http://toolbox.klasresearch.com">http://toolbox.klasresearch.com</a></li>
 					<li>Live Kudu: <a href="http://live-kudu/deployments/live-toolbox">Live-toolbox</a>
 				</ul>
+				Content Server
+				<br />
+				Dev: \\cmnfile\WebFileShare_dev\Content
+				<br />
+				QA: \\cmnfile\WebFileShare_qa\Content
+				<br />
+				Stage:	\\cmnfile\WebFileShare_stage\Content
+				<br />
+				Live: \\Ash\Content
 				<p>
 					If asked "who is your hero?"<br />
 					Answer: Super Dave
