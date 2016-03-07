@@ -69,10 +69,7 @@
 				<p>
 					If asked "who is your hero?"<br />
 					Answer: Super Dave
-				</p>
-				<br />
-				<br />
-				SqlServer Sql Reporting Service:  <a href="http://reporting/Reports/Pages/Folder.aspx">http://reporting/Reports/Pages/Folder.aspx</a>
+				</p>				
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
 			</div>
@@ -122,6 +119,11 @@
 		<div id="col3Spacer">
 		</div>
 	</div>
+	<br />
+				SqlServer Sql Reporting Service:  <a href="http://reporting/Reports/Pages/Folder.aspx">http://reporting/Reports/Pages/Folder.aspx</a>
+	<hr />
+
+
 	<b>Push to Live</b>
 	Using Git-Extensions <i>(by merging Master branch into live-research repo  or live-toolbox repo)</i>
 	<ul>
