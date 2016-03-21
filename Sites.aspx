@@ -34,6 +34,7 @@
             <a href="http://jira.klasresearch.com:8080/secure/RapidBoard.jspa?rapidView=15&quickFilter=29">JIRA</a> | 
 			<a href="http://visualstudioshortcuts.com/2015/" target="_blank">VS Studio Shortcuts</a> | 
 			<a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a> | 
+			<a href="https://css-tricks.com/examples/ShapesOfCSS/">Shapes of CSS</a> |
 			<a href="https://wrapbootstrap.com/">Templates (for toolbox)</a> |
 			<a href="http://dev-toolbox/template/static_full_version/">Inspinia Dashboard</a> | 
 			<a href="https://canvaslms.klasresearch.com/">Canvas</a>
