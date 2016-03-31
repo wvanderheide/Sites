@@ -150,6 +150,7 @@
 	<b>HOT FIX</b>
 	<ul>
 		<li>See Git Release Process <a href="docs/GITReleaseProcess.docx">doc</a>.</li>
+		<li>Also see <a href="docs/EDMX.docx">How to update the EDMX from the sql-staging database</a>.</li>
 	</ul>
 
 	<b>Tech Team Process Documentation</b>
