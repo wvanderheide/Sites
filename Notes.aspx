@@ -322,7 +322,7 @@
         <div id="col2">
             <fieldset>
                 <legend>Git Commands</legend>
-                <div style="padding: 5px">
+                <div style="padding: 5px; overflow:scroll; height:280px">
 					To use git from the commandline use terminal on windows (cmd.exe), and read <a href="https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Powershell">https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Powershell</a>
 					<br />
 					<br />
@@ -374,6 +374,64 @@
             #################################################################################################################
             #################################################################################################################
             -->
+
+		<script>
+			$(document).ready(function () {
+				$('#txt1').val(location.search);
+			});
+			function ParseQS() {
+				var paramName = $('#txt2').val();
+				var vars = [], hash;
+				var q = document.URL.split('?')[1];
+				if (q != undefined) {
+					q = q.split('&');
+					for (var i = 0; i < q.length; i++) {
+						hash = q[i].split('=');
+						vars.push(hash[1]);
+						vars[hash[0]] = hash[1];
+					}
+				}
+
+				alert(vars[paramName]);
+			}
+		</script>
+		
+        <fieldset class="AutoHeight AutoWidth">
+            <legend>Javascript Notes</legend>
+			Javascript to get QS params and val:
+			<br />
+			<pre>
+			var qs = location.search; //gets the QueryString  
+				<input type="text" id="txt1" />
+			
+
+			function ParseQS(ParamName)
+				{
+				var vars = [], hash;
+				var q = document.URL.split('?')[1];
+				if (q != undefined) {
+					q = q.split('&');
+					for (var i = 0; i < q.length; i++) {
+						hash = q[i].split('=');
+						vars.push(hash[1]);
+						vars[hash[0]] = hash[1];
+					}
+				}
+
+				alert(vars[ParamName])
+
+				}
+
+				As used on C:\Code\KLAS\Klas.Toolbox\Modules\DataEntry\MarketSegmentGroup\Edit.aspx
+			}</pre>
+			
+				Enter QS param name:  <input type="text" id="txt2" value="id" /> <button type="button" onclick="ParseQS()">Alert Val</button>
+			</fieldset>
+		
+        <fieldset class="AutoHeight AutoWidth">
+            <legend>SQL</legend>
+			&nbsp;To see a page that use "old fashion"  SqlConnection and SqlCommand objects to execute sql see <b>C:\Code\KLAS\Klas.Toolbox\Areas\DataEntry\Controllers\MarketSegmentGroupController.cs</b>
+				</fieldset>
         <fieldset class="AutoHeight AutoWidth">
             <legend>jQuery Notes</legend>
             <input id="Checkbox5" type="checkbox" onclick="ToggleNotShown()" />
