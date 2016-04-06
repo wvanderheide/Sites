@@ -44,7 +44,7 @@
 			<fieldset>
 				<legend>ToolBox</legend><i>ASP.NET 3.5? and MVC 5?</i>
 				<ul>
-					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-toolbox/">Browse</a> 
+					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-toolbox/">Browse</a>
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Toolbox" target="_blank">Explore</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="http://dev-toolbox/">Browse</a> or <a href="http://dev-toolbox/dashboard/default.aspx?SeeCacheKeys=1">Home Page</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
@@ -70,7 +70,7 @@
 				<p>
 					If asked "who is your hero?"<br />
 					Answer: Super Dave
-				</p>				
+				</p>
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
 			</div>
@@ -97,7 +97,13 @@
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
 					<li>Live Kudu: <a href="http://live-kudu/deployments/live-research">Live-research</a>
 				</ul>
-				<p>Users:  mercedes@epic.com</p>
+				<p>
+					Users (password)
+				<br />
+					mercedes@epic.com ()
+				<br />
+					mstack@epic.com (epic)
+				</p>
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
 			</div>
@@ -121,7 +127,7 @@
 		</div>
 	</div>
 	<br />
-				SqlServer Sql Reporting Service:  <a href="http://reporting/Reports/Pages/Folder.aspx">http://reporting/Reports/Pages/Folder.aspx</a>
+	SqlServer Sql Reporting Service:  <a href="http://reporting/Reports/Pages/Folder.aspx">http://reporting/Reports/Pages/Folder.aspx</a>
 	<hr />
 
 
@@ -131,18 +137,18 @@
 		<li>Pick KLAS from the Recent Repositories live</li>
 		<li>Get the lastest code by clicking the blue "pull" arrow <i class="fa fa-arrow-down"></i>.</li>
 		<li>Click the blue "push" arrow <i class="fa fa-arrow-up"></i>.</li>
-		<li>In the resulting dialog in the first drop down pick live-toolbox. [For QA or staging leave the dropdown on "origin"].  See <span style="text-decoration:underline; cursor: pointer; color:blue" onclick="var ele = document.getElementById('divImgPush'); ele.style.display = 'block'">pic</span>.  <i>One might also update the live-research repo and then push live-research to live as in this <span style="text-decoration:underline; cursor: pointer; color:blue" onclick="var ele = document.getElementById('divImgPush2'); ele.style.display = 'block'">pic</span></i>.
+		<li>In the resulting dialog in the first drop down pick live-toolbox. [For QA or staging leave the dropdown on "origin"].  See <span style="text-decoration: underline; cursor: pointer; color: blue" onclick="var ele = document.getElementById('divImgPush'); ele.style.display = 'block'">pic</span>.  <i>One might also update the live-research repo and then push live-research to live as in this <span style="text-decoration: underline; cursor: pointer; color: blue" onclick="var ele = document.getElementById('divImgPush2'); ele.style.display = 'block'">pic</span></i>.
 			 
 
 		</li>
 		<li>In the "Push Branches" section notice that the Branch to Push is "master" and in the "to" area type "live" in lowercase without the qoutes. [For QA or staging type in qa or staging]</li>
 	</ul>
-		
+
 	<div style="display: none" id="divImgPush">
 		<img src="img/pushtoLive.png" />
 	</div>
-	
-	
+
+
 	<div style="display: none" id="divImgPush2">
 		<img src="img/PushToLiveFromLive.png" />
 	</div>
@@ -157,13 +163,13 @@
 	<ul>
 		<li>Process <a href="docs/TechTeamProcessDocumentation.docx">doc</a>.</li>
 	</ul>
-	
+
 	<b>Accessing the database through code</b>
 	<ul>
 		<li>Basically we use Injection.  MVC Controller consumes a Domain Controller class which in turn consumes the Domain Repository which access the EDMX generated dbcontext.  Here are a few more details:  <a href="docs/AccessingDatabaseViaKLASCode.docx">doc</a>.</li>
 	</ul>
 
-    <div id="Footer">
+	<div id="Footer">
 		Design by <a href="mailto:Walter.Vanderheide@KlasResearch.com">Walter VanderHeide</a>
 	</div>
 </body>
