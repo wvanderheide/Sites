@@ -44,7 +44,7 @@
 			<fieldset>
 				<legend>ToolBox</legend><i>ASP.NET 3.5? and MVC 5?</i>
 				<ul>
-					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-toolbox/">Browse</a>
+					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-toolbox/siteAdmin/sitemap">Browse</a>
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Toolbox" target="_blank">Explore</a> | <a href="http://wvander-toolbox/template/static_full_version/">Inspinia Dashboard</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="http://dev-toolbox/">Browse</a> or <a href="http://dev-toolbox/dashboard/default.aspx?SeeCacheKeys=1">Home Page</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
