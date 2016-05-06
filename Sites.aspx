@@ -130,7 +130,10 @@
 	SqlServer Sql Reporting Service:  <a href="http://reporting/Reports/Pages/Folder.aspx">http://reporting/Reports/Pages/Folder.aspx</a>
 	<hr />
 
-
+	<b>KLAS Push Diagram</b>
+	<a href="/img/programmer_workflow.jpg" target="_blank">Diagram</a>
+	<br />
+	<br />
 	<b>Push to Live</b>
 	Using Git-Extensions <i>(by merging Master branch into live-research repo  or live-toolbox repo)</i>
 	<ul>
