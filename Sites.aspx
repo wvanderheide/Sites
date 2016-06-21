@@ -172,6 +172,15 @@
 	<ul>
 		<li>Basically we use Injection.  MVC Controller consumes a Domain Controller class which in turn consumes the Domain Repository which access the EDMX generated dbcontext.  Here are a few more details:  <a href="docs/AccessingDatabaseViaKLASCode.docx">doc</a>.</li>
 	</ul>
+	
+	<b>Adding a new DLL Reference</b>
+	<ul>
+		<li>Any new DLL that is to be reference in a project should first be added to the C:\Code\KLAS\Assemblies\ folder</li>
+		<li>The same DLL will also need be be added to gitHub by going to the gitHub <a href="https://github.com/klasresearch/KLAS/" target="_blank">website</a>, opening the Assemblies folder, and uploading the new dll.</li>
+	</ul>
+	<br />
+	<br />
+	<span style="color: red; font-weight:bold">If we update inspinia.js we need to ensure the call to skin-config.html is commented out.</span>
 
 	<div id="Footer">
 		Design by <a href="mailto:Walter.Vanderheide@KlasResearch.com">Walter VanderHeide</a>
