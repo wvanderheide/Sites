@@ -135,6 +135,13 @@
 	<a href="/img/programmer_workflow.jpg" target="_blank">Diagram</a>
 	<br />
 	<br />
+
+	
+	<b>Product Dev Cycle </b>
+	<a href="/docs/ProductDevCycle_v1.7.pdf" target="_blank">Doc</a>
+	<br />
+	<br />
+
 	<b>Push to Live</b>
 	Using Git-Extensions <i>(by merging Master branch into live-research repo  or live-toolbox repo)</i>
 	<ul>
