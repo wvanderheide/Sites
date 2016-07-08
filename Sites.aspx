@@ -128,7 +128,8 @@
 	</div>
 	<br />
 	<b>SqlServer Sql Reporting Service:</b>  <a href="http://reporting/Reports/Pages/Folder.aspx">http://reporting/Reports/Pages/Folder.aspx</a>
-	<br />Example of <b>Roles</b>, such as EmployeeRoleType.TechTeam, see C:\Code\KLAS\Klas.Toolbox\Modules\HumanResources\Employee\Add.aspx.cs
+	<br />
+	Example of <b>Roles</b>, such as EmployeeRoleType.TechTeam, see C:\Code\KLAS\Klas.Toolbox\Modules\HumanResources\Employee\Add.aspx.cs
 	<hr />
 
 	<b>KLAS Push Diagram</b>
@@ -136,13 +137,23 @@
 	<br />
 	<br />
 
-	
+
 	<b>Product Dev Cycle </b>
 	<a href="/docs/ProductDevCycle_v1.7.pdf" target="_blank">Doc</a>
 	<br />
 	<br />
 
 	<b>Push to Live</b>
+	Using Source Tree <i>(by merging staging branch into live-research repo  or live-toolbox repo)</i>
+	<ul>
+		<li>In source tree click on the Repository menu and select "add remote", click the add button, and the toolbox and/or research Repo from Ash (http://kudu-live-toolbox/live-toolbox.git || http://kudu-live-research/live-research.git)</li>
+		<li>With the Ash remote(s) added find the Remotes icon on the left side menu of Source Tree, and right click live-ToolBox (or reseach) and do a Fetch</li>
+		<li>Now "live" should appear under live-toolbox remotes and next right click "live" and do a Fetch (pull will not work) to create a local copy.</li>
+		<li>Next merge local staging branch into the live branch</li>
+		<li>Push the live branch, but make sure that in the "push to repostitory" dropdown you have choosen "live-toolbox", and that the remote branch is set to "live". See this <a href="/img/pushtoLiveSourceTree.png" target="_blank">screen shot</a>. </li>
+	</ul>
+	<br />
+	<br />
 	Using Git-Extensions <i>(by merging Master branch into live-research repo  or live-toolbox repo)</i>
 	<ul>
 		<li>Pick KLAS from the Recent Repositories live</li>
@@ -179,7 +190,7 @@
 	<ul>
 		<li>Basically we use Injection.  MVC Controller consumes a Domain Controller class which in turn consumes the Domain Repository which access the EDMX generated dbcontext.  Here are a few more details:  <a href="docs/AccessingDatabaseViaKLASCode.docx">doc</a>.</li>
 	</ul>
-	
+
 	<b>Adding a new DLL Reference</b>
 	<ul>
 		<li>Any new DLL that is to be reference in a project should first be added to the C:\Code\KLAS\Assemblies\ folder</li>
@@ -187,7 +198,7 @@
 	</ul>
 	<br />
 	<br />
-	<span style="color: red; font-weight:bold">If we update inspinia.js we need to ensure the call to skin-config.html is commented out.</span>
+	<span style="color: red; font-weight: bold">If we update inspinia.js we need to ensure the call to skin-config.html is commented out.</span>
 
 	<div id="Footer">
 		Design by <a href="mailto:Walter.Vanderheide@KlasResearch.com">Walter VanderHeide</a>
