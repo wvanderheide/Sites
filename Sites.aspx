@@ -32,6 +32,7 @@
             <a href="Notes.aspx?id=<%= ID %>">Notes</a> |
             <a href="http://spam.klasresearch.com/FrontController">Spam (email and 1q)</a> |
             <a href="http://jira.klasresearch.com:8080/secure/RapidBoard.jspa?rapidView=15&quickFilter=29">JIRA</a> | 
+			<a href="https://github.com/klasresearch/KLAS">GitHub/KLAS</a> | 
 			<a href="http://visualstudioshortcuts.com/2015/" target="_blank">VS Studio Shortcuts</a> | 
 			<a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a> | 
 			<a href="https://css-tricks.com/examples/ShapesOfCSS/">Shapes of CSS</a> |
@@ -147,8 +148,8 @@
 	Using Source Tree <i>(by merging staging branch into live-research repo  or live-toolbox repo)</i>
 	<ul>
 		<li>In source tree click on the Repository menu and select "add remote", click the add button, and the toolbox and/or research Repo from Ash (http://kudu-live-toolbox/live-toolbox.git || http://kudu-live-research/live-research.git)</li>
-		<li>With the Ash remote(s) added find the Remotes icon on the left side menu of Source Tree, and right click live-ToolBox (or reseach) and do a Fetch</li>
-		<li>Now "live" should appear under live-toolbox remotes and next right click "live" and do a Fetch (pull will not work) to create a local copy.</li>
+		<li>With the Ash remote(s) added find the Remotes icon on the left side menu of Source Tree, and right click live-ToolBox (or reseach) and do a Fetch (pull will not work)</li>
+		<li>Now "live" should appear under live-toolbox remotes and next double click "live" to create a local copy (aka checkout).</li>
 		<li>Next merge local staging branch into the live branch</li>
 		<li>Push the live branch, but make sure that in the "push to repostitory" dropdown you have choosen "live-toolbox", and that the remote branch is set to "live". See this <a href="/img/pushtoLiveSourceTree.png" target="_blank">screen shot</a>. </li>
 	</ul>
