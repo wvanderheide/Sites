@@ -45,19 +45,17 @@
 			<fieldset>
 				<legend>ToolBox</legend><i>ASP.NET 3.5? and MVC 5?</i>
 				<ul>
+					<li>Bamboo: <a href="http://dev-build.klasresearch.com:8085/allPlans.action">Bamboo</a></li>
+					<li>Octopous:   <a href="http://dev-build.klasresearch.com/app#/">Octopus</a></li>
 					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-toolbox/siteAdmin/sitemap">Browse</a>
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Toolbox" target="_blank">Explore</a> | <a href="http://wvander-toolbox/template/static_full_version/">Inspinia Dashboard</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="http://dev-toolbox/">Browse</a> or <a href="http://dev-toolbox/dashboard/default.aspx?SeeCacheKeys=1">Home Page</a>
-						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
-					<li>Dev Kudu: <a href="http://staging-kudu/deployments/dev-toolbox">dev-toolbox</a>
+						| <a href="#Unknown" target="_blank">Explore</a></li>
 					<li>QA:&nbsp;&nbsp; <a href="http://qa-toolbox/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
-					<li>QA Kudu: <a href="http://staging-kudu/deployments/qa-toolbox">qa-toolbox</a>
 					<li>Stage:&nbsp;&nbsp; <a href="http://staging-toolbox/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
-					<li>Stage Kudu: <a href="http://staging-kudu/deployments/staging-toolbox">staging-toolbox</a>
 					<li>Live:&nbsp;&nbsp; <a href="http://toolbox.klasresearch.com">http://toolbox.klasresearch.com</a></li>
-					<li>Live Kudu: <a href="http://live-kudu/deployments/live-toolbox">Live-toolbox</a>
 				</ul>
 				Content Server
 				<br />
@@ -88,15 +86,11 @@
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="http://dev-research/">Browse</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
-					<li>Dev Kudu: <a href="http://staging-kudu/deployments/dev-research">dev-research</a>
 					<li>QA:&nbsp;&nbsp; <a href="http://qa-research/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
-					<li>QA Kudu: <a href="http://staging-kudu/deployments/qa-research">qa-research</a>
 					<li>Stage:&nbsp;&nbsp; <a href="http://staging-research/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
-					<li>Stage Kudu: <a href="http://staging-kudu/deployments/staging-research">staging-research</a>
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
-					<li>Live Kudu: <a href="http://live-kudu/deployments/live-research">Live-research</a>
 				</ul>
 				<p>
 					Users (password)
