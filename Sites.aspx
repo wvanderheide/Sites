@@ -47,6 +47,7 @@
 				<ul>
 					<li>Bamboo: <a href="http://dev-build.klasresearch.com:8085/allPlans.action">Bamboo</a></li>
 					<li>Octopous:   <a href="http://dev-build.klasresearch.com/app#/">Octopus</a></li>
+					<li>Glimpse: <a href="http://dev-toolbox/glimpse.axd">Glimpse</a></li>
 					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-toolbox/siteAdmin/sitemap">Browse</a>
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Toolbox" target="_blank">Explore</a> | <a href="http://wvander-toolbox/template/static_full_version/">Inspinia Dashboard</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="http://dev-toolbox/">Browse</a> or <a href="http://dev-toolbox/dashboard/default.aspx?SeeCacheKeys=1">Home Page</a>
