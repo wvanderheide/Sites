@@ -128,6 +128,10 @@
 	Example of <b>Roles</b>, such as EmployeeRoleType.TechTeam, see C:\Code\KLAS\Klas.Toolbox\Modules\HumanResources\Employee\Add.aspx.cs
 	<hr />
 
+	Alex's new "databaseAccess" project may need to be added to the KLAS solution.  <a href="/img/DatabaseAccessProject.jpg" target="_blank">Diagram</a>
+
+	<hr />
+
 	<b>KLAS Push Diagram</b>
 	<a href="/img/programmer_workflow.jpg" target="_blank">Diagram</a>
 	<br />
