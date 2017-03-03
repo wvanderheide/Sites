@@ -96,9 +96,11 @@
 				<p>
 					Users (password)
 				<br />
-					mercedes@epic.com ()
+					mercedes@epic.com (epic)
 				<br />
 					mstack@epic.com (epic)
+				<br />
+					John Doe-Test
 				</p>
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
