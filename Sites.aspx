@@ -139,7 +139,11 @@
 	<br />
 	<br />
 
-
+	
+	<b>Database User Defined Types</b>
+	<a href="/img/UserDefinedTypes.jpg" target="_blank">Diagram</a>
+	<br />
+	<br />
 	<b>Product Dev Cycle </b>
 	<a href="/docs/ProductDevCycle_v1.7.pdf" target="_blank">Doc</a>
 	<br />
