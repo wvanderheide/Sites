@@ -100,7 +100,7 @@
 				<br />
 					mstack@epic.com (epic)
 				<br />
-					John Doe-Test
+					John Doe-Test (provider) devtest@klasresearch.com
 				</p>
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
