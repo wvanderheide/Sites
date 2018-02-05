@@ -95,7 +95,7 @@
 				</ul>
 				<br />
 				<br />
-					<b>&nbsp;<u>Users (password)</u></b>
+					<b>&nbsp;<u>Users</u></b>
 					<ul>
 						<li>mercedes@epic.com (epic - vendor)</li>
 						<li>mstack@epic.com (epic - vendor)</li>
