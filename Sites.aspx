@@ -93,15 +93,15 @@
 						target="_blank">Explore</a></li>
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
 				</ul>
-				<p>
-					Users (password)
 				<br />
-					mercedes@epic.com (epic)
 				<br />
-					mstack@epic.com (epic)
-				<br />
-					John Doe-Test (provider) devtest@klasresearch.com
-				</p>
+					<b>&nbsp;<u>Users (password)</u></b>
+					<ul>
+						<li>mercedes@epic.com (epic - vendor)</li>
+						<li>mstack@epic.com (epic - vendor)</li>
+						<li>devtest@klasresearch.com (provider) John Doe-Test</li>
+						<li>marc.probst@imail.org (Intermountain - provider)</li>
+					</ul>					
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
 			</div>
