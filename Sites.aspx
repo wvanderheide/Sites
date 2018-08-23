@@ -113,11 +113,10 @@
 
 		<div id="col3">
 			<fieldset>
-				<legend>klasresearch.com</legend>
+				<legend>Klas Research X</legend>
 				<ul>
-					<li>Live:&nbsp;&nbsp; <a href="http://www.klasresearch.com/">http://www.klasresearch.com</a></li>
+					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-researchx/Home">http://wvander-researchx/Home</a></li>
 				</ul>
-				<p>klasresearch.com is a sitefinity site</p>
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
 			</div>
