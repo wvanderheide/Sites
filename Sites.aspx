@@ -88,6 +88,7 @@
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="http://dev-research/">Browse</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
+                    <li>dev core:&nbsp;&nbsp; <a href="http://dev-core.klasresearch.com">Browse</a></li>
 					<li>QA:&nbsp;&nbsp; <a href="http://qa-research/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
 					<li>Stage:&nbsp;&nbsp; <a href="http://staging-research/">Browse</a> | <a href="#"
