@@ -96,6 +96,8 @@
                     <li>Stage core:&nbsp;&nbsp; <a href="https://staging-core.klasresearch.com/">Browse</a></li>
                     <li>Git Branch: staging-research</li>
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
+                    <li>Beta Live core:&nbsp;&nbsp; <a href="https://beta.klasresearch.com/provider-dashboard">Browse</a></li>
+                    <li>Live Branch: live-research</li>
 				</ul>
 				<br />
 				<br />
