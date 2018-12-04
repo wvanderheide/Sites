@@ -37,7 +37,7 @@
 			<a href="http://visualstudioshortcuts.com/2015/" target="_blank">VS Studio Shortcuts</a> | 
 			<a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a> | 
 			<a href="https://css-tricks.com/examples/ShapesOfCSS/">Shapes of CSS</a> |
-			<a href="https://wrapbootstrap.com/">Templates (for toolbox)</a> |
+			<a href="http://dev-research.klasresearch.com/styleguide/icons.html">KLAS FA</a> |
 			<a href="http://dev-toolbox/template/static_full_version/">Inspinia Dashboard</a> | 
 			<a href="https://canvaslms.klasresearch.com/">Canvas</a>
 		</div>
@@ -88,10 +88,13 @@
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="http://dev-research/">Browse</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
+                    <li>dev core:&nbsp;&nbsp; <a href="http://dev-core.klasresearch.com">Browse</a></li>
 					<li>QA:&nbsp;&nbsp; <a href="http://qa-research/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
 					<li>Stage:&nbsp;&nbsp; <a href="http://staging-research/">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
+                    <li>Stage core:&nbsp;&nbsp; <a href="https://staging-core.klasresearch.com/">Browse</a></li>
+                    <li>Git Branch: staging-research</li>
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
 				</ul>
 				<br />
@@ -113,11 +116,10 @@
 
 		<div id="col3">
 			<fieldset>
-				<legend>klasresearch.com</legend>
+				<legend>Klas Research X</legend>
 				<ul>
-					<li>Live:&nbsp;&nbsp; <a href="http://www.klasresearch.com/">http://www.klasresearch.com</a></li>
+					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-researchx/Home">http://wvander-researchx/Home</a></li>
 				</ul>
-				<p>klasresearch.com is a sitefinity site</p>
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
 			</div>
