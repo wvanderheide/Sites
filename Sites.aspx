@@ -80,23 +80,21 @@
 		<div id="col1Spacer">
 		</div>
 
+
 		<div id="col2">
 			<fieldset>
 				<legend>Klas Research (Data)</legend><i>ASP.NET 3.5?</i>
 				<ul>
 					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-research/">Browse</a>
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
-					<li>dev:&nbsp;&nbsp; <a href="http://dev-research/">Browse</a>
+					<li>dev:&nbsp;&nbsp; <a href="https://dev-research.klasresearch.com">Browse</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
-                    <li>dev core:&nbsp;&nbsp; <a href="http://dev-core.klasresearch.com">Browse</a></li>
-					<li>QA:&nbsp;&nbsp; <a href="http://qa-research/">Browse</a> | <a href="#"
+                   
+					<li>QA:&nbsp;&nbsp; <a href="https://qa-research.klasresearch.com">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
-					<li>Stage:&nbsp;&nbsp; <a href="http://staging-research/">Browse</a> | <a href="#"
+					<li>Stage:&nbsp;&nbsp; <a href="https://staging-research.klasresearch.com">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
-                    <li>Stage core:&nbsp;&nbsp; <a href="https://staging-core.klasresearch.com/">Browse</a></li>
-                    <li>Git Branch: staging-research</li>
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
-                    <li>Beta Live core:&nbsp;&nbsp; <a href="https://beta.klasresearch.com/provider-dashboard">Browse</a></li>
                     <li>Live Branch: live-research</li>
 				</ul>
 				<br />
