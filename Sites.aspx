@@ -28,15 +28,14 @@
 	<div id="MainBody">
 		<div id="HeaderText"><span id="Logo">&#9819;</span>KLAS Websites</div>
 		<div id="Nav">
-			<a href="Sites.aspx?id=<%= ID %>">Sites</a> |
+            <a href="Sites.aspx?id=<%= ID %>">Sites</a> |
             <a href="Notes.aspx?id=<%= ID %>">Notes</a> |
             <a href="http://spam.klasresearch.com/FrontController">Spam (email and 1q)</a> |
-            <a href="http://jira.klasresearch.com:8080/secure/RapidBoard.jspa?rapidView=15&quickFilter=29">JIRA</a> | 
+            <a href="https://jsonformatter.org/json-viewer">Json Formatter</a> | 
             <a href="https://fontawesome.com/v4.7.0/icons/">FA 4.7</a> | 
 			<a href="https://github.com/klasresearch/KLAS">GitHub/KLAS</a> | 
 			<a href="http://visualstudioshortcuts.com/2015/" target="_blank">VS Studio Shortcuts</a> | 
 			<a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a> | 
-			<a href="https://css-tricks.com/examples/ShapesOfCSS/">Shapes of CSS</a> |
 			<a href="http://dev-research.klasresearch.com/styleguide/icons.html">KLAS FA</a> |
 			<a href="http://dev-toolbox/template/static_full_version/">Inspinia Dashboard</a> | 
 			<a href="https://canvaslms.klasresearch.com/">Canvas</a>
