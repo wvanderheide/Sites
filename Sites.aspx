@@ -58,15 +58,7 @@
 						target="_blank">Explore</a></li>
 					<li>Live:&nbsp;&nbsp; <a href="http://toolbox.klasresearch.com">http://toolbox.klasresearch.com</a></li>
 				</ul>
-				Content Server
-				<br />
-				Dev: \\cmnfile\WebFileShare_dev\Content
-				<br />
-				QA: \\cmnfile\WebFileShare_qa\Content
-				<br />
-				Stage:	\\cmnfile\WebFileShare_stage\Content
-				<br />
-				Live: \\Ash\Content
+				
 				<p>
 					If asked "who is your hero?"<br />
 					Answer: Super Dave
@@ -82,7 +74,8 @@
 
 		<div id="col2">
 			<fieldset>
-				<legend>Klas Research (Data)</legend><i>ASP.NET 3.5?</i>
+				<legend>Klas Research (Data)</legend>
+                <i>ASP.NET 3.5?</i>
 				<ul>
 					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-research/">Browse</a>
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
@@ -115,9 +108,23 @@
 
 		<div id="col3">
 			<fieldset>
-				<legend>Klas Research X</legend>
+				<legend>Servers</legend>
+
+                <b>&nbsp;Web Server Machine Names</b>
 				<ul>
-					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-researchx/Home">http://wvander-researchx/Home</a></li>
+					<li>Local Host: WALTERV-DT</li>
+					<li>Dev: STAGEWEB</li>
+					<li>QA: STAGEWEB</li>
+					<li>STAGING: STAGEWEB</li>
+					<li>LIVE: ASH</li>
+				</ul>
+                <br />
+                <b>&nbsp;Content Server</b>
+				<ul>
+					<li>Dev: \\cmnfile\WebFileShare_dev</li>
+					<li>QA: \\cmnfile\WebFileShare_qa</li>
+                    <li>Stage:	\\cmnfile\WebFileShare_stage</li>
+                    <li>Live: \\Ash</li>
 				</ul>
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
