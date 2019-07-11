@@ -134,6 +134,9 @@
 		</div>
 	</div>
 	<br />
+	walter.vanderheide@klasresearch.com: <input type="text" value="walter.vanderheide@klasresearch.com" style="width:400px" />
+	<br />
+	<br />
 	<b>SqlServer Sql Reporting Service:</b>  <a href="http://reporting/Reports/Pages/Folder.aspx">http://reporting/Reports/Pages/Folder.aspx</a>
 	<br />
 	Example of <b>Roles</b>, such as EmployeeRoleType.TechTeam, see C:\Code\KLAS\Klas.Toolbox\Modules\HumanResources\Employee\Add.aspx.cs
