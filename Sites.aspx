@@ -121,9 +121,9 @@
                 <br />
                 <b>&nbsp;Content Server</b>
 				<ul>
-					<li>Dev: \\cmnfile\WebFileShare_dev</li>
-					<li>QA: \\cmnfile\WebFileShare_qa</li>
-                    <li>Stage:	\\cmnfile\WebFileShare_stage</li>
+					<li>Dev: \\stageweb\DEV/li>
+					<li>QA: \\stageweb\QA</li>
+                    <li>Stage:	\\stageweb\STAGING</li>
                     <li>Live: \\Ash</li>
 				</ul>
 			</fieldset>
