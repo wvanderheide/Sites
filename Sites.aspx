@@ -121,7 +121,7 @@
                 <br />
                 <b>&nbsp;Content Server</b>
 				<ul>
-					<li>Dev: \\stageweb\DEV/li>
+					<li>Dev: \\stageweb\DEV</li>
 					<li>QA: \\stageweb\QA</li>
                     <li>Stage:	\\stageweb\STAGING</li>
                     <li>Live: \\Ash</li>
