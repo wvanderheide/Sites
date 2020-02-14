@@ -35,7 +35,8 @@
             <a href="https://fontawesome.com/v4.7.0/icons/">FA 4.7</a> | 
 			<a href="http://visualstudioshortcuts.com/2015/" target="_blank">VS Studio Shortcuts</a> | 
 			<a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a> | 
-			<a href="https://klasresearch.com/styleguide/buttons.html">Style Guide</a> |
+			<a href="https://klasresearch.com/styleguide/buttons.html">Style Guide</a> | 
+			<a href="https://dev.azure.com/KLASEnterprises">Azure DevOps</a>
 		</div>
 		<div style="clear: both"></div>
 		<div id="col1">
