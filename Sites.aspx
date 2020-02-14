@@ -28,42 +28,19 @@
 	<div id="MainBody">
 		<div id="HeaderText"><span id="Logo">&#9819;</span>KLAS Websites</div>
 		<div id="Nav">
-            <a href="Sites.aspx?id=<%= ID %>">Sites</a> |
-            <a href="Notes.aspx?id=<%= ID %>">Notes</a> |			
-            <a href="http://jira.klasresearch.com:8080/secure/RapidBoard.jspa?rapidView=15&quickFilter=29">Jira</a> | 
-            <a href="https://jsonformatter.org/json-viewer">Json Formatter</a> | 
-            <a href="https://fontawesome.com/v4.7.0/icons/">FA 4.7</a> | 
-			<a href="http://visualstudioshortcuts.com/2015/" target="_blank">VS Studio Shortcuts</a> | 
-			<a href="http://www.amp-what.com/unicode/search/%2F%26%5Cw%2F">HTML Codes</a> | 
-			<a href="https://klasresearch.com/styleguide/buttons.html">Style Guide</a> | 
-			<a href="https://dev.azure.com/KLASEnterprises">Azure DevOps</a>
+		    <a href="Sites.aspx?id=<%= ID %>">Sites</a> |
+		    <a href="Notes.aspx?id=<%= ID %>">Notes</a> |			
+		    <a href="http://jira.klasresearch.com:8080/secure/RapidBoard.jspa?rapidView=15&quickFilter=29">Jira</a> | 
+		    <a href="https://jsonformatter.org/json-viewer">Json Formatter</a> | 
+		    <a href="https://fontawesome.com/v4.7.0/icons/">FA 4.7</a> | 
+		    <a href="https://klasresearch.com/styleguide/buttons.html">Style Guide</a> | 
+		    <a href="https://dev.azure.com/KLASEnterprises">Azure DevOps</a> | 
+		    <a href="https://dev-build.klasresearch.com/app#/Spaces-1/projects/klas-research/deployments">Octopus</a> | 
+		    <a href="http://dev-build.klasresearch.com:8085/allPlans.action">Bamboo</a>
 		</div>
 		<div style="clear: both"></div>
 		<div id="col1">
-			<fieldset>
-				<legend>ToolBox</legend><i>ASP.NET 3.5? and MVC 5?</i>
-				<ul>
-					<li>Bamboo: <a href="http://dev-build.klasresearch.com:8085/allPlans.action">Bamboo</a></li>
-					<li>Octopous:   <a href="http://dev-build.klasresearch.com/app#/">Octopus</a></li>
-					<li>Glimpse: <a href="http://dev-toolbox/glimpse.axd">Glimpse</a></li>
-					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-toolbox/siteAdmin/sitemap">Browse</a>
-						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Toolbox" target="_blank">Explore</a> | <a href="http://wvander-toolbox/template/static_full_version/">Inspinia Dashboard</a></li>
-					<li>dev:&nbsp;&nbsp; <a href="http://dev-toolbox/">Browse</a> or <a href="http://dev-toolbox/dashboard/default.aspx?SeeCacheKeys=1">Home Page</a>
-						| <a href="#Unknown" target="_blank">Explore</a></li>
-					<li>QA:&nbsp;&nbsp; <a href="http://qa-toolbox/">Browse</a> | <a href="#"
-						target="_blank">Explore</a></li>
-					<li>Stage:&nbsp;&nbsp; <a href="http://staging-toolbox/">Browse</a> | <a href="#"
-						target="_blank">Explore</a></li>
-					<li>Live:&nbsp;&nbsp; <a href="http://toolbox.klasresearch.com">http://toolbox.klasresearch.com</a></li>
-				</ul>
-				
-				<p>
-					If asked "who is your hero?"<br />
-					Answer: Super Dave
-				</p>
-			</fieldset>
-			<div class="SpacerBetweenFieldSets">
-			</div>
+			
 		</div>
 
 		<div id="col1Spacer">
