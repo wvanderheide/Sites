@@ -34,7 +34,7 @@
 		    <a href="https://jsonformatter.org/json-viewer">Json Formatter</a> | 
 		    <a href="https://fontawesome.com/v4.7.0/icons/">FA 4.7</a> | 
 		    <a href="https://klasresearch.com/styleguide/buttons.html">Style Guide</a> | 
-		    <a href="https://dev.azure.com/KLASEnterprises">Azure DevOps</a> | 
+		    <a href="https://dev.azure.com/KLASEnterprises/KLAS%20Website/_git/KLAS/pushes?itemVersion=GBmaster">Azure DevOps</a> | 
 		    <a href="https://dev-build.klasresearch.com/app#/Spaces-1/projects/klas-research/deployments">Octopus</a> | 
 		    <a href="http://dev-build.klasresearch.com:8085/allPlans.action">Bamboo</a>
 		</div>
