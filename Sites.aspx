@@ -96,10 +96,10 @@
                 <br />
                 <b>&nbsp;Content Server</b>
 				<ul>
-					<li>Dev: \\stageweb\DEV [\\stageweb\DEV\images]</li>
+					<li>Dev: \\stageweb\DEV [\\stageweb\DEV\<b>images</b>]</li>
 					<li>QA: \\stageweb\QA</li>
                     <li>Stage:	\\stageweb\STAGING</li>
-                    <li>Live: \\Ash [\\Ash\researchimages]</li>
+                    <li>Live: \\Ash [\\Ash\<b>researchimages</b>]</li>
 				</ul>
 			</fieldset>
 			<div class="SpacerBetweenFieldSets">
