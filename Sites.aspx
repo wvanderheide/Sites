@@ -36,7 +36,8 @@
 		    <a href="https://klasresearch.com/styleguide/buttons.html">Style Guide</a> | 
 		    <a href="https://dev.azure.com/KLASEnterprises/KLAS%20Website/_git/KLAS/pushes?itemVersion=GBmaster">Azure DevOps</a> | 
 		    <a href="https://dev-build.klasresearch.com/app#/Spaces-1/projects/klas-research/deployments">Octopus</a> | 
-		    <a href="http://dev-build.klasresearch.com:8085/allPlans.action">Bamboo</a>
+		 <%--   <a href="http://dev-build.klasresearch.com:8085/allPlans.action">Bamboo</a> |--%>
+			<a href="https://developers.google.com/speed/pagespeed/insights/">Page Speed</a>
 		</div>
 		<div style="clear: both"></div>
 		<div id="col1">
