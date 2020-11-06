@@ -29,7 +29,8 @@
 		<div id="HeaderText"><span id="Logo">&#9819;</span>KLAS Websites</div>
 		<div id="Nav">
 		    <a href="Sites.aspx?id=<%= ID %>">Sites</a> |
-		    <a href="Notes.aspx?id=<%= ID %>">Notes</a> |			
+		    <a href="Notes.aspx?id=<%= ID %>">Notes</a> |	
+		    <a href="svgs.aspx">SVGs</a> |				
 		    <a href="http://jira.klasresearch.com:8080/secure/RapidBoard.jspa?rapidView=15&quickFilter=29">Jira</a> | 
 		    <a href="https://jsonformatter.org/json-viewer">Json Formatter</a> | 
 		    <a href="https://fontawesome.com/v4.7.0/icons/">FA 4.7</a> | 
