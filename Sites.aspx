@@ -42,6 +42,18 @@
 		</div>
 		<div style="clear: both; padding-top:12px">&nbsp;</div>
 		Visual Studio - Surround with tag, with text selected press <b>Alt + Shift + W</b>
+<br />
+git stash list
+<br />
+git stash --help
+<br />
+git save save "comment here"
+<br />
+git stash pop (removes most recent and applys it to current branch)
+<br />
+git stash apply
+<br />
+git stash drop
 		<div style="clear: both; padding-bottom: 12px">&nbsp;</div>
 		<div id="col1">
 			
@@ -160,7 +172,7 @@
 			 
 
 		</li>
-		<li>In the "Push Branches" section notice that the Branch to Push is "master" and in the "to" area type "live" in lowercase without the qoutes. [For QA or staging type in qa or staging]</li>
+		<li>In the "Push Branches" section notice that the Branch to Push is "master" and in the "to" area type "live" in lowercase without the quotes. [For QA or staging type in qa or staging]</li>
 	</ul>
 
 	<div style="display: none" id="divImgPush">
