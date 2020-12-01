@@ -40,7 +40,9 @@
 		 <%--   <a href="http://dev-build.klasresearch.com:8085/allPlans.action">Bamboo</a> |--%>
 			<a href="https://developers.google.com/speed/pagespeed/insights/">Page Speed</a>
 		</div>
-		<div style="clear: both"></div>
+		<div style="clear: both; padding-top:12px">&nbsp;</div>
+		Visual Studio - Surround with tag, with text selected press <b>Alt + Shift + W</b>
+		<div style="clear: both; padding-bottom: 12px">&nbsp;</div>
 		<div id="col1">
 			
 		</div>
