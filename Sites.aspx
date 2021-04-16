@@ -70,12 +70,12 @@ git stash drop
 				<ul>
 					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-research/">Browse</a>
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
-					<li>dev:&nbsp;&nbsp; <a href="https://dev-research.klasresearch.com">Browse</a>
+					<li>dev:&nbsp;&nbsp; <a href="https://dev.klasresearch.com">Browse</a>
 						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
                    
-					<li>QA:&nbsp;&nbsp; <a href="https://qa-research.klasresearch.com">Browse</a> | <a href="#"
+					<li>QA:&nbsp;&nbsp; <a href="https://qa.klasresearch.com">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
-					<li>Stage:&nbsp;&nbsp; <a href="https://staging-research.klasresearch.com">Browse</a> | <a href="#"
+					<li>Stage:&nbsp;&nbsp; <a href="https://staging.klasresearch.com">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
                     <li>Live Branch: live-research</li>
