@@ -31,7 +31,7 @@
 		    <a href="Sites.aspx?id=<%= ID %>">Sites</a> |
 		    <a href="Notes.aspx?id=<%= ID %>">Notes</a> |	
 		    <a href="svgs.aspx">SVGs</a> |				
-		    <a href="http://jira.klasresearch.com:8080/secure/RapidBoard.jspa?rapidView=15&quickFilter=29">Jira</a> | 
+		    <a href="https://klas.atlassian.net/jira/projects">Jira</a> | 
 		    <a href="https://jsonformatter.org/json-viewer">Json Formatter</a> | 
 		    <a href="https://fontawesome.com/v4.7.0/icons/">FA 4.7</a> | 
 		    <a href="https://klasresearch.com/styleguide/buttons.html">Style Guide</a> | 
@@ -71,10 +71,9 @@ git stash drop
 					<li>Localhost:&nbsp;&nbsp; <a href="http://wvander-research/">Browse</a>
 						| <a href="\\wvanderh-dt\C$\Code\KLAS\Klas.Research" target="_blank">Explore</a></li>
 					<li>dev:&nbsp;&nbsp; <a href="https://dev.klasresearch.com">Browse</a>
-						| <a href="#Unknown" target="_blank">Explore</a> DEV BOX IS????</li>
+						| Git Branch:  Development</li>
                    
-					<li>QA:&nbsp;&nbsp; <a href="https://qa.klasresearch.com">Browse</a> | <a href="#"
-						target="_blank">Explore</a></li>
+					<li>QA:&nbsp;&nbsp; <a href="https://qa.klasresearch.com">Browse</a> | Git Branch:  Master</li>
 					<li>Stage:&nbsp;&nbsp; <a href="https://staging.klasresearch.com">Browse</a> | <a href="#"
 						target="_blank">Explore</a></li>
 					<li>Live:&nbsp;&nbsp; <a href="http://data.klasresearch.com/">http://data.klasresearch.com</a></li>
